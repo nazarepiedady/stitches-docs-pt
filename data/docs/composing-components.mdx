@@ -1,0 +1,100 @@
+---
+title: Composing Components
+description: Composing one Stitches component into another.
+---
+
+Stitches components can be composed via the `styled` function.
+
+<Preview>
+  <DemoButton children="Base button" css={{ mr: '$4' }} />
+  <DemoButton
+    children="Checkout button"
+    css={{
+      borderRadius: 0,
+      backgroundColor: '$pink10',
+      color: 'white',
+      '&:hover': {
+        backgroundColor: '$pink11',
+      },
+    }}
+  />
+</Preview>
+
+```jsx
+const BaseButton = styled('button', {});
+
+const CheckoutButton = styled(BaseButton, {
+  borderRadius: 0,
+  backgroundColor: 'hotpink',
+  color: 'white',
+  '&:hover': {
+    backgroundColor: 'deeppink',
+  },
+});
+
+() => (
+  <>
+    <BaseButton>Base button</BaseButton>
+    <CheckoutButton>Checkout button</CheckoutButton>
+  </>
+);
+```
+
+When you compose a component which has variants, they will be inherited.
+
+<Preview>
+  <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+    <DemoButton children="Base button" size="small" />
+    <DemoButton
+      children="Checkout button"
+      css={{
+        borderRadius: 0,
+        backgroundColor: '$pink10',
+        color: 'white',
+        '&:hover': {
+          backgroundColor: '$pink11',
+        },
+      }}
+      size="small"
+    />
+    <DemoButton children="Base button" size="large" />
+    <DemoButton
+      children="Checkout button"
+      css={{
+        borderRadius: 0,
+        backgroundColor: '$pink10',
+        color: 'white',
+        '&:hover': {
+          backgroundColor: '$pink11',
+        },
+      }}
+      size="large"
+    />
+  </div>
+</Preview>
+
+```jsx line=4-9,12-14,16-23
+const BaseButton = styled('button', {
+  // base styles
+
+  variants: {
+    size: {
+      small: {},
+      large: {},
+    },
+  },
+});
+
+const CheckoutButton = styled(BaseButton, {
+  // checkout styles
+});
+
+() => (
+  <>
+    <BaseButton size="small">Base button</BaseButton>
+    <CheckoutButton size="small">Checkout button</CheckoutButton>
+    <BaseButton size="large">Base button</BaseButton>
+    <CheckoutButton size="large">Checkout button</CheckoutButton>
+  </>
+);
+```
