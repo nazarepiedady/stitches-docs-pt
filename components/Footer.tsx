@@ -55,7 +55,7 @@ export const Footer = () => {
                     border: 0,
                   }}
                 >
-                  Stitches homepage
+                  Página Principal da Stitches
                 </span>
                 <StitchesLogo />
               </Box>
@@ -71,25 +71,25 @@ export const Footer = () => {
                 '@bp2': { mt: '$5', ml: '0' },
               }}
             >
-              Stitches is a project by <Link href="https://workos.com">WorkOS</Link>.
+              Stitches é um projeto desenvolvido pela <Link href="https://workos.com">WorkOS</Link>.
             </Text>
           </Flex>
           <Box>
             <Text as="h6" size="3" css={{ fontWeight: 500, lineHeight: '20px' }}>
-              Overview
+              Visão Geral
             </Text>
             <ul>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/introduction" passHref>
-                    <Link variant="subtle">Introduction</Link>
+                    <Link variant="subtle">Introdução</Link>
                   </NextLink>
                 </Text>
               </li>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/tutorials" passHref>
-                    <Link variant="subtle">Tutorials</Link>
+                    <Link variant="subtle">Lições Práticas</Link>
                   </NextLink>
                 </Text>
               </li>
@@ -117,28 +117,28 @@ export const Footer = () => {
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/installation" passHref>
-                    <Link variant="subtle">Installation</Link>
+                    <Link variant="subtle">Instalação</Link>
                   </NextLink>
                 </Text>
               </li>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/styling" passHref>
-                    <Link variant="subtle">Styling</Link>
+                    <Link variant="subtle">Estilização</Link>
                   </NextLink>
                 </Text>
               </li>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/variants" passHref>
-                    <Link variant="subtle">Variants</Link>
+                    <Link variant="subtle">Variantes</Link>
                   </NextLink>
                 </Text>
               </li>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/docs/tokens" passHref>
-                    <Link variant="subtle">Configuration</Link>
+                    <Link variant="subtle">Configuração</Link>
                   </NextLink>
                 </Text>
               </li>
@@ -146,13 +146,13 @@ export const Footer = () => {
           </Box>
           <Box>
             <Text as="h6" size="3" css={{ fontWeight: 500, lineHeight: '20px' }}>
-              Community
+              Comunidade
             </Text>
             <ul>
               <li>
                 <Text as="p" size="3" css={{ mt: '$3', lineHeight: '20px' }}>
                   <NextLink href="/blog" passHref>
-                    <Link variant="subtle">Blog</Link>
+                    <Link variant="subtle">Blogue</Link>
                   </NextLink>
                 </Text>
               </li>
