@@ -9,16 +9,16 @@ import { Header } from '@components/Header';
 export default function Blog({ frontmatters }) {
   return (
     <Box>
-      <TitleAndMetaTags title="Blog — Stitches" description="More about what we're up to." />
+      <TitleAndMetaTags title="Blogue — Stitches" description="Mais a respeito do que estamos fazendo." />
 
       <Header />
 
       <Container size="3" css={{ textAlign: 'center', mb: '$4' }}>
         <Text as="h1" size={{ '@initial': '6', '@bp2': '7' }} css={{ mb: '$4', fontWeight: 500 }}>
-          Blog
+          Blogue
         </Text>
         <Text as="h2" size={{ '@initial': '4', '@bp2': '6' }} css={{ color: '$slate11', mb: '$4' }}>
-          More about what we're up to.
+          Mais a respeito do que estamos fazendo.
         </Text>
       </Container>
 
@@ -50,7 +50,7 @@ export default function Blog({ frontmatters }) {
                 <Text size="2" css={{ color: '$slate11' }}>
                   &nbsp;by {authors[frontmatter.by].name}
                 </Text>
-                {frontmatter.type === 'changelog' && <Badge css={{ ml: '$2' }}>Changelog</Badge>}
+                {frontmatter.type === 'changelog' && <Badge css={{ ml: '$2' }}>Relatório de Mudança</Badge>}
               </Flex>
               <Text as="p" size="4" css={{ lineHeight: '25px', mt: '$2', color: '$slate11' }}>
                 {frontmatter.description}
