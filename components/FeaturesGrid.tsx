@@ -15,10 +15,11 @@ export function FeaturesGrid() {
     <Section size={{ '@initial': '2', '@bp1': '3' }}>
       <Container size="2">
         <Heading size="3" css={{ ta: 'center', mb: '$2' }}>
-          Features
+          Funcionalidades
         </Heading>
         <Paragraph size="2" css={{ ta: 'center', mb: '$8' }}>
           A fully-featured styling library.
+          Um biblioteca de estilização completa
         </Paragraph>
 
         <Grid
@@ -33,21 +34,21 @@ export function FeaturesGrid() {
         >
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Performant
+              Excelente Desempenho
             </Text>
             <Text
               as="p"
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches avoids unnecessary prop interpolations at runtime, making it more performant
-              than other styling libraries.
+              Stitches evita interpolações de propriedade desnecessárias em tempo de execução, dando-lhe
+              mais desempenho do que outras bibliotecas de estilização.
             </Text>
           </Box>
 
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Server-side rendering
+              Interpretação no Lado do Servidor
             </Text>
 
             <Text
@@ -55,14 +56,14 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches supports cross-browser server-side rendering, even for responsive styles and
-              variants.
+              Stitches suporta interpretação no lado do servidor transnavegadora, até para estilos moldáveis
+              e variantes.
             </Text>
           </Box>
 
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Developer experience
+              Experiência de Programação
             </Text>
 
             <Text
@@ -70,14 +71,14 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              With a fully-typed API, token-aware properties, and custom utils, Stitches offers a
-              fun and intuitive DX.
+              Com uma API completamente tipada, propriedades de consciência simbólica, utilitários 
+              personalizados, a Stitches oferece uma experiência de programação intuitiva e divertida.
             </Text>
           </Box>
 
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Critical Path CSS
+              CSS de Caminho Crítico
             </Text>
 
             <Text
@@ -85,14 +86,14 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches only injects the styles which are actually used, so your users don't download
-              unnecessary CSS.
+              Stitches só injeta os estilos que são de fato utilizados, então os teus utilizadores não
+              descarregam CSS desnecessário.
             </Text>
           </Box>
 
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Override component tags
+              Sobrepõe Marcadores de Componente
             </Text>
 
             <Text
@@ -100,14 +101,14 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              A polymorphic <Code>as</Code> prop is included in components returned from the{' '}
-              <Code>styled</Code> function.
+              Um propriedade <Code>as</Code> polimórfica é incluída nos componentes retornados da{' '}
+              função <Code>styled</Code>.
             </Text>
           </Box>
 
           <Box>
             <Text size="5" as="h4" css={{ lineHeight: 1, fontWeight: 500, mb: '$2' }}>
-              Override component styles
+              Sobrepõe Estilos de Componente
             </Text>
 
             <Text
@@ -115,8 +116,8 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches provides a <Code>css</Code> prop, which allows style overrides to be applied
-              in the consumption layer.
+              Stitches fornece uma propriedade <Code>css</Code>, que permite que a sobreposição de estilo
+              seja aplicada na camada de consumo.
             </Text>
           </Box>
         </Grid>
