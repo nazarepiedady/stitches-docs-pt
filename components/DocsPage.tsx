@@ -138,7 +138,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
             <NavHeading>Community</NavHeading>
             <NavItem href="/blog">
               <Text size="2" css={{ color: 'inherit', lineHeight: '1' }}>
-                Blog
+                Blogue
               </Text>
             </NavItem>
             <NavItem href="https://github.com/stitchesjs/stitches">
@@ -197,7 +197,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
                   <NextLink href={`/${previous.slug}`} passHref>
                     <Box
                       as="a"
-                      aria-label={`Previous page: ${previous.title}`}
+                      aria-label={`Página anterior: ${previous.title}`}
                       css={{
                         color: '$blue11',
                         textDecoration: 'none',
@@ -206,7 +206,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
                     >
                       <Box css={{ mb: '$2' }}>
                         <Text size="3" css={{ color: '$slate11' }}>
-                          Previous
+                          Anterior
                         </Text>
                       </Box>
                       <Text size="5" css={{ color: 'inherit' }}>
@@ -221,7 +221,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
                   <NextLink href={`/${next.slug}`} passHref>
                     <Box
                       as="a"
-                      aria-label={`Previous page: ${next.title}`}
+                      aria-label={`Página seguinte: ${next.title}`}
                       css={{
                         color: '$blue11',
                         textDecoration: 'none',
@@ -230,7 +230,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
                     >
                       <Box css={{ mb: '$2' }}>
                         <Text size="3" css={{ color: '$slate11' }}>
-                          Next
+                          Seguinte
                         </Text>
                       </Box>
                       <Text size="5" css={{ color: 'inherit' }}>
@@ -252,7 +252,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
               target="_blank"
               variant="subtle"
             >
-              Edit this page on GitHub.
+              Edite esta página na GitHub.
             </Link>
           </Text>
         </Container>
