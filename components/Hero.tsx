@@ -51,7 +51,7 @@ export function Hero() {
             },
           }}
         >
-          Style your components with confidence
+          Estilize os teus componentes com confiança
         </Heading>
         <Paragraph
           size="2"
@@ -64,13 +64,13 @@ export function Hero() {
             },
           }}
         >
-          CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class
-          developer experience.
+          CSS-em-JS com quase zero tempo de execução, SSR, suporte de variantes, e uma excelente
+          experiência do programador.
         </Paragraph>
         <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
           <NextLink href="/docs" passHref>
             <HomepageButton as="a" color="violet" css={{ mr: '$3' }}>
-              Documentation
+              Documentação
               <Box css={{ ml: '$1' }}>
                 <ArrowRightIcon />
               </Box>
@@ -179,7 +179,7 @@ export function Hero() {
               </svg>
             </Flex>
             <Heading as="h4" css={{ mb: '$2' }}>
-              Performant
+              Execelente Desempenho
             </Heading>
             <Text
               as="p"
@@ -192,8 +192,8 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Stitches avoids unnecessary prop interpolations at runtime, making it more performant
-              than other styling libraries.
+              Stitches evita interpolações de propriedade desnecessárias em tempo de execução, dando-lhe
+              mais desempenho do que outras bibliotecas de estilização.
             </Text>
           </Box>
           <Box>
@@ -280,7 +280,7 @@ export function Hero() {
               </svg>
             </Flex>
             <Heading as="h4" css={{ mb: '$2' }}>
-              Feature-rich
+              Rica em Funcionalidades
             </Heading>
             <Text
               as="p"
@@ -293,8 +293,9 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Packed full of useful features like theming, smart tokens, <Code>css</Code> prop,{' '}
-              <Code>as</Code> prop, utils, and a fully-typed API.
+              Pacote cheio de funcionalidades úteis como criação de temas, simbólicos inteligentes,
+              propriedade <Code>css</Code>,{' '} propriedade <Code>as</Code>, utilitários, e uma
+              API completamente tipada.
             </Text>
           </Box>
           <Box>
@@ -351,7 +352,7 @@ export function Hero() {
               </svg>
             </Flex>
             <Heading as="h4" css={{ mb: '$2' }}>
-              Best-in-class DX
+              Excelente Experiência de Programação
             </Heading>
             <Text
               as="p"
@@ -364,8 +365,8 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Stitches has a fully-typed API, to minimize the learning curve, and provide the best
-              possible developer experience.
+              Stitches possui uma API completamente tipada, para minimizar a curva de aprendizado, e
+              fornece a melhor experiência de programação possível.
             </Text>
           </Box>
           <Box>
@@ -419,7 +420,7 @@ export function Hero() {
               </svg>
             </Flex>
             <Heading as="h4" css={{ mb: '$2' }}>
-              Framework-agnostic
+              Abstração Agnóstica
             </Heading>
             <Text
               as="p"
@@ -432,8 +433,8 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Stitches has a dedicated React lib, but <Code>@stitches/core</Code> works with any
-              framework including Vue, Svelte, and even vanilla HTML.
+              Stitches possui uma biblioteca dedicada a React, porém a <Code>@stitches/core</Code>
+              funciona com qualquer abstração incluíndo a Vue, Svelte, e até masmo HTML pura.
             </Text>
           </Box>
         </Grid>
