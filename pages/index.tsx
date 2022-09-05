@@ -226,7 +226,7 @@ export default function Home() {
 
   return (
     <Box>
-      <TitleAndMetaTags title="Stitches — CSS-in-JS with near-zero runtime" />
+      <TitleAndMetaTags title="Stitches — CSS-em-JS com quase zero tempo de execução" />
       <Box
         css={{
           top: 0,
@@ -253,7 +253,7 @@ export default function Home() {
       <Section size={{ '@initial': '2', '@bp1': '3' }}>
         <Container size="3">
           <Heading as="h3" size="3" css={{ fontWeight: 500, ta: 'center', mb: '$8' }}>
-            Stats at a glance
+            Estatísticas de relance
           </Heading>
           <Grid
             css={{
@@ -276,7 +276,7 @@ export default function Home() {
             </Box>
             <Box>
               <Text variant="gray" css={{ lineHeight: '20px', mb: '$3' }}>
-                Bundle size (React)
+                Tamanho do pacote (React)
               </Text>
               <Text size="8" css={{ fontWeight: 500 }}>
                 6.1kb
@@ -284,7 +284,7 @@ export default function Home() {
             </Box>
             <Box>
               <Text variant="gray" css={{ lineHeight: '20px', mb: '$3' }}>
-                Runtime interpolations
+                Interpolações em tempo de execução
               </Text>
               <Text size="8" css={{ fontWeight: 500 }}>
                 Zero
@@ -292,7 +292,7 @@ export default function Home() {
             </Box>
             <Box>
               <Text variant="gray" css={{ lineHeight: '20px', mb: '$3' }}>
-                Variants
+                Variantes
               </Text>
               <Text size="8" css={{ fontWeight: 500 }}>
                 ∞
@@ -321,12 +321,12 @@ export default function Home() {
                 <Code css={{ mb: '$5', fontFamily: '$mono', fontSize: '$4' }}>Variants</Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
-                Design composable component APIs with variants
+                Desenhe APIs de componente constituível com variantes
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Variants are a first-class citizen of Stitches. With multiple variants, compound
-                variants, and default variants, you can design composable component APIs which are
-                typed automatically.
+                Variantes são um cidadão de primeira classe de Stitches. Com várias varientes, variantes,
+                variantes compostas, e variantes predefinidas, podes desenhar APIs de componente
+                constituível que são tipadas automaticamente.
               </Text>
               <Box
                 css={{
@@ -345,7 +345,7 @@ export default function Home() {
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Variants</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Define multiple component variants.
+                    Defina várias variantes de componentes.
                   </Text>
                 </Card>
                 <Card
@@ -355,10 +355,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Compound Variants
+                    Variantes Compostas
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Apply styles only when multiple variants match.
+                    Aplicar estilos só quando as várias variantes corresponderem.
                   </Text>
                 </Card>
                 <Card
@@ -371,7 +371,7 @@ export default function Home() {
                     Default Variants
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Set a value as the default for each variant.
+                    Defina um valor como padrão para cada variante.
                   </Text>
                 </Card>
               </Box>
@@ -400,16 +400,16 @@ export default function Home() {
                     color: '$cyan11',
                   }}
                 >
-                  Theming
+                  Criação de Temas
                 </Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
-                Dark mode is effortless with built-in theming.
+                Modo escuro é fácil com a crianção de tema embutida.
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Stitches has built-in solutions for tokens and theming, which use CSS variables
-                under-the-hood. You can define multiple themes, then expose them to any part of your
-                app.
+                Stitches tem soluções embutidas para simbólicos e criação de temas, que utilizam variavés
+                de CSS nos bastidores. Tu podes definir vários temas, depois expor eles em qualquer parte
+                da tua aplicação.
               </Text>
               <Box
                 css={{
@@ -428,7 +428,7 @@ export default function Home() {
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Tokens</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Define tokens with our built-in solution.
+                    Defina simbólicos com a nossa solução embutida.
                   </Text>
                 </Card>
                 <Card
@@ -439,7 +439,7 @@ export default function Home() {
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Token aliases</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Reference pre-existing tokens to define semantic aliases.
+                    Consulte os simbólicos pré-existentes para definir pseudónimos semânticos.
                   </Text>
                 </Card>
                 <Card
@@ -450,7 +450,7 @@ export default function Home() {
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Themes</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Override tokens to define multiple themes.
+                    Sobreponha os simbólicos para definir vários temas.
                   </Text>
                 </Card>
               </Box>
@@ -619,10 +619,10 @@ export default function Home() {
         </Box>
         <Container size="3">
           <Text size="8" css={{ fontWeight: 500, ta: 'center', mb: '$2', lineHeight: '40px' }}>
-            Testimonials
+            Testemunhos
           </Text>
           <Paragraph size="2" css={{ ta: 'center' }}>
-            Sharing some love from the community &lt;3
+            Partilhando algum amor da comunidade &lt;3
           </Paragraph>
         </Container>
         <WallOfLove />
@@ -653,16 +653,16 @@ export default function Home() {
                     color: '$yellow11',
                   }}
                 >
-                  Smart tokens
+                  Simbólicos inteligentes
                 </Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
-                Save time with smart, typed token mapping
+                Poupe tempo com o mapeamento inteligente de simbólico tipado
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Tokens automatically map to the most appropriate scale—with a simple syntax—for a
-                smooth developer experience. You can customise the default mapping with our{' '}
-                <Code>themeMap</Code> object, or override the default on a case-by-case basis.
+                Simbólicos delineiam automaticamente para escala mais apropriada—com uma sintaxe simples—
+                para um experiência suavel de programador. Tu podes personalizar o mapeamento padrão com
+                o nosso {''} objeto <Code>themeMap</Code>, ou sobrepor o padrão baseado em cada caso.
               </Text>
               <Box
                 css={{
@@ -680,10 +680,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Smart token mapping
+                    Mapeamento de simbólico inteligente
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Tokens automatically map to the most appropriate scale.
+                    Simbólicos delineam automaticamente para escala mais apropriada.
                   </Text>
                 </Card>
                 <Card
@@ -693,10 +693,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Specific token mapping
+                    Mapeamento de simbólico especifico
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Override the default and map to any scale.
+                    Sobreponha o padrão e delineie para qualquer escala.
                   </Text>
                 </Card>
               </Box>
@@ -725,16 +725,16 @@ export default function Home() {
                     color: '$blue11',
                   }}
                 >
-                  Utils
+                  Utilitários
                 </Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
-                Turbocharge your coding speed with custom CSS properties
+                Aumente a tua velocidade de codificação com propriedades de CSS personalizadas
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Invent your own custom CSS properties with our utils feature. Speed up your workflow
-                by abbreviating CSS properties, grouping multiple CSS properties together, or
-                simplifying a tricky syntax.
+                Invente as tuas próprias propriedades de CSS personalizadas com a nossa funcionalidade de
+                utilitários. Acelere a teu fluxo de trabalho abreviando propriedades de CSS, agrupando 
+                várias propriedades de CSS juntas, ou simplificando uma sintaxe complicada.
               </Text>
               <Box
                 css={{
@@ -752,10 +752,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Property shorthands
+                    Abreviações de propriedade
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Abbreviate CSS properties.
+                    Abrevie propriedades de CSS.
                   </Text>
                 </Card>
                 <Card
@@ -765,10 +765,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Property bundles
+                    Pacotes de propriedade
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Apply multiple CSS properties simultaneously.
+                    Aplique várias propriedades de CSS simultaneamente.
                   </Text>
                 </Card>
                 <Card
@@ -778,10 +778,10 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Simplify syntax
+                    Simplifique a sintaxe
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Simplify a tricky CSS syntax.
+                    Simplifique uma sintaxe de CSS complicada.
                   </Text>
                 </Card>
               </Box>
