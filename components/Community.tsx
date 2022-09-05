@@ -14,10 +14,10 @@ export function Community() {
     <Section size={{ '@initial': '2', '@bp1': '3' }}>
       <Container size="2">
         <Heading as="h3" size="3" css={{ ta: 'center', mb: '$2' }}>
-          Community
+          Comunidade
         </Heading>
         <Paragraph size="2" css={{ ta: 'center', mb: '$8' }}>
-          Get involved in our community. Everyone is welcome!
+          Envolva-te na nossa comunidade. Todo mundo é bem-vindo!
         </Paragraph>
 
         <Grid
@@ -70,7 +70,7 @@ export function Community() {
                 Twitter
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                For announcements, blog posts, and general Stitches tips.
+                Para anúncios, publicações do blogue e dicas gerais de Stitches. 
               </Text>
             </Card>
           </Box>
@@ -105,7 +105,7 @@ export function Community() {
                 Discord
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                To get involved in the community, ask questions, and share tips.
+                Para envolveres-te na comunidade, fazeres perguntas, e partilhar dicas.
               </Text>
             </Card>
           </Box>
@@ -141,7 +141,7 @@ export function Community() {
                 GitHub
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                To file issues, request features, and contribute, check out our GitHub.
+                Para apresentar problemas, pedires funcionalidades e contribuires, consulte a nossa GitHub.
               </Text>
             </Card>
           </Box>
