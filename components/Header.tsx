@@ -39,7 +39,7 @@ export function Header() {
               border: 0,
             }}
           >
-            Stitches homepage
+            Página Principal da Stitches
           </span>
           <StitchesLogo />
         </Box>
@@ -47,12 +47,12 @@ export function Header() {
       <Flex as="nav" css={{ ai: 'center' }}>
         <NextLink href="/docs/installation" passHref>
           <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$7' } }}>
-            <Text>Docs</Text>
+            <Text>Documentação</Text>
           </Link>
         </NextLink>
         <NextLink href="/blog" passHref>
           <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$7' } }}>
-            <Text>Blog</Text>
+            <Text>Blogue</Text>
           </Link>
         </NextLink>
         <Link
