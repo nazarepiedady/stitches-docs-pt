@@ -98,12 +98,12 @@ export default function BlogPost({ frontmatter, code, relatedPosts }: BlogPost) 
         <Separator size="2" css={{ my: '$8', mx: 'auto' }} />
         <Box css={{ textAlign: 'center' }}>
           <Text as="p" size="4" css={{ lineHeight: 2 }}>
-            Share this post on{' '}
+            Partilhe esta publicação na{' '}
             <Link
               href={twitterShare}
               target="_blank"
               rel="noopener noreferrer"
-              title="Share this post on Twitter"
+              title="Partilhe esta publicação na Twitter"
             >
               Twitter
             </Link>
@@ -124,7 +124,7 @@ export default function BlogPost({ frontmatter, code, relatedPosts }: BlogPost) 
                 textTransform: 'uppercase',
               }}
             >
-              Related
+              Relacionado
             </Text>
 
             <Flex css={{ my: '$4', flexDirection: 'column', gap: '$4' }}>
