@@ -1,9 +1,9 @@
 ---
-title: Composing Components
-description: Composing one Stitches component into another.
+title: Composição de Componentes
+description: Compondo um componente de Stitches para um outro.
 ---
 
-Stitches components can be composed via the `styled` function.
+Os componentes de Stitches podem ser compostos através da função `styled`.
 
 <Preview>
   <DemoButton children="Base button" css={{ mr: '$4' }} />
@@ -40,7 +40,7 @@ const CheckoutButton = styled(BaseButton, {
 );
 ```
 
-When you compose a component which has variants, they will be inherited.
+Quando compões um componente que possui variantes, elas serão herdadas.
 
 <Preview>
   <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -75,7 +75,7 @@ When you compose a component which has variants, they will be inherited.
 
 ```jsx line=4-9,12-14,16-23
 const BaseButton = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     size: {
@@ -86,7 +86,7 @@ const BaseButton = styled('button', {
 });
 
 const CheckoutButton = styled(BaseButton, {
-  // checkout styles
+  // estilos do `checkout`
 });
 
 () => (
