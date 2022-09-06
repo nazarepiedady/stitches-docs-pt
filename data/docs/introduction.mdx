@@ -1,47 +1,48 @@
 ---
-title: Introduction
+title: Introdução
 description: The what and the why of Stitches.
+description: O quê e o porquê da Stitches.
 ---
 
-<Image alt="Stitches logo with a purple and blue gradient" src="/docs-intro.png" />
+<Image alt="O logótipo da Stitches com um gradiente púrpura e azul" src="/docs-intro.png" />
 
-Stitches is a lightweight, performant styling library with a focus on component architecture and developer experience.
+A Stitches é uma leve, biblioteca de estilização de excelente desempenho com um foco na arquitetura de componente e experiência do programador.
 
 ---
 
-## Performance
+## Desempenho
 
-### Near-Zero Runtime
+### Tempo de execução quase zero
 
-At Modulz, performance is paramount. So when designing Stitches, performance was a top priority.
+Na Modulz, o desempenho é primordial. Assim quando estávamos desenhando a Stitches, o desempenho foi a prioridade máxima.
 
-Stitches avoids unnecessary prop interpolations at runtime, making it significantly more performant than other styling libraries.
+A Stitches evita interpolações de propriedades desnecessárias em tempo de execução, tornando-a significativamente de maior desempenho do que outras bibliotecas de estilização.
 
-Both `@stitches/core` and `@stitches/react` libraries weigh in at ~6kb gzipped.
+Ambas bibliotecas `@stitches/core` e `@stitches/react` pesam em torno de ~6kb compactado em gzip.
 
-### Server-Side Rendering
+### Interpretação no Lado do Servidor
 
-Many UI libraries document that responsive variants don't work with server-side rendering. Since popular frameworks like [Next.js](https://nextjs.org/) and [Gatsby](https://www.gatsbyjs.com/) have begun prioritising SSR, we wanted a solution that works well.
+Muitas bibliotecas de UI documentam que variantes responsivas não funcionam com interpretação no lado do servidor. Desde que abstrações populares como a [Next.js](https://nextjs.org/) e [Gatsby](https://www.gatsbyjs.com/) começaram a priorização da SSR, nós quisemos uma solução que funcionasse bem.
 
-Stitches supports cross-browser [server-side rendering](/docs/server-side-rendering), even for responsive styles and variants.
+A Stitches suporta [interpretação no lado do servidor](/docs/server-side-rendering) de navegador transversal (cross-browser), até para estilos e variantes responsivas.
 
-## Key Features
+## Funcionalidades Principais
 
-### Variants
+### Variantes
 
-Stitches introduces [variants](/docs/variants) as a first-class citizen, so you can design composable component APIs.
+A Stitches introduz [variantes](/docs/variants) como um cidadão de primeira classe, assim podes desenhar APIs de componente constituível.
 
-You can define a single variant, multiple variants, and even [compound variants](/docs/variants#compound-variants) which allow you to define styles based on a combination of variants.
+Tu podes definir uma única variante, várias variantes, e até [variantes compostas](/docs/variants#variantes-compostas) que te permitem definir estilos com base em uma combinação de variantes.
 
-Variants can be applied conditionally or responsively.
+As variantes podem ser aplicadas condicionalmente ou responsivamente.
 
-### Tokens
+### Simbólicos
 
-One of the most exciting features is the ability to define your own [tokens](/docs/tokens) and seamlessly apply them as CSS values. CSS Properties are automatically mapped to token scales. Tokens can even be used in shorthand CSS properties.
+Uma das funcionalidades mais entusiasmante é a habilidade de definir os teus próprios [simbólicos (tokens)](/docs/tokens) e aplicá-los continuamente como valores de CSS. As propriedades de CSS são mapeadas automaticamente para escalas simbólica. Os simbólicos atá podem ser utilizados em propriedades de CSS abreviadas.
 
-### Theming
+### Criação de Tema
 
-Stitches provides a simple [theming](/docs/theming) experience out of the box. Create as many themes as you need, and apply them wherever you want. Each theme generates a CSS class name which overrides the default tokens.
+A Stitches fornece uma experiência simples de [criação de tema](/docs/theming) fora da baixa. Crie quantos temas precisares, e aplique-os onde quer que tu quiseres. Cada tema gera um nome de classe de CSS que sobrepõe os simbólicos predefinidos.
 
 ```jsx
 const darkTheme = createTheme({
@@ -61,11 +62,11 @@ const darkTheme = createTheme({
 });
 ```
 
-### Utils
+### Utilitários
 
-[Utils](/docs/utils) allow you to create your own custom CSS Properties, with your own API.
+Os [utilitários](/docs/utils) permitem-te criar as tuas próprias propriedades de CSS personalizadas, com a tua própria API.
 
-Use utils to create powerful combinations of properties, property aliases and to introduce restrictions when needed.
+Utilize os utilitários para criar poderosas combinações de propriedades, pseudónimo de propriedade e introduzir restrições quando necessário.
 
 ```jsx
 export const { styled, css } = createStitches({
@@ -82,9 +83,9 @@ export const { styled, css } = createStitches({
 });
 ```
 
-### Responsive Variants
+### Variantes Responsiva
 
-Stitches lets you configure [breakpoints](/docs/responsive-styles) and apply variants responsively using the `css` prop. CSS at-rules can also be used inline if needed.
+A Stitches deixa-te configurar [pontos de quebra](/docs/responsive-styles) e aplicar variantes responsivamente utilizando a propriedade `css`. As regras arroba de CSS também podem ser utilizadas em lina se necessário. 
 
 ```jsx
 export const { styled, css } = createStitches({
@@ -97,48 +98,48 @@ export const { styled, css } = createStitches({
 });
 ```
 
-### Overrides
+### Sobreposição
 
-Stitches provides a `css` prop for overriding styles on any Stitches component. You can use this prop to define layout concerns and/or [overrides](/docs/overriding-styles). Tokens and breakpoints also work in the `css` prop.
+A Stitches fornece uma propriedade `css` para sobreposição de estilos em qualquer componente de Stitches. Tu podes utilizar esta propriedade para definir preocupações de disposição e ou [sobreposição](/docs/overriding-styles). Os simbólicos e pontos de quebra também funcionam na propriedade `css`.
 
 ```jsx
 <Button css={{ backgroundColor: 'red' }}>Button</Button>
 ```
 
-Stitches also provides a polymorphic `as` prop for defining which tag a component renders.
+A Stitches também fornecem uma propriedade `as` polimórfica para definir qual marcador um componente interpreta.
 
 ```jsx
 <Text as="h1">Heading</Text>
 <Text as="p">Paragraph</Text>
 ```
 
-### Developer Experience
+### Experiência de Programação
 
-One of our main goals is to provide the best possible developer experience. Stitches provides a fully-typed API, so when using TypeScript, CSS properties, values, and breakpoints will be auto-completed for you.
+Um dos nossos principais objetivos é fornecer a melhor experiência de programador possível. A Stitches fornece uma API completamente tipada, assim quando estiveres utilizando a TypeScript, as propriedades de CSS, os valores, e pontos de quebras serão auto-concluídos por ti.
 
-Also, when using the `as` prop, the prop suggestions will update.
+Além disso, quando estiveres utilizando a propriedade `as`, as sugestões de propriedade se atualizarão.
 
 ---
 
-## Community
+## Comunidade
 
-We're excited to see the community adopt Stitches, raise issues, and provide feedback. Whether it's a feature request, bug report, or a project to showcase, please get involved!
+Estamos entusiasmados em ver a comunidade adotar a Stitches, levantar questões, e reagir. Quer seja um pedido de funcionalidade, relatório de bug, ou um projeto para exibir, se envolva!
 
 - [Discord](https://discord.com/invite/H4eG3Mk)
 - [Twitter](https://twitter.com/stitchesjs)
-- [GitHub Discussions](https://github.com/stitchesjs/stitches/discussions)
+- [Discussões do GitHub](https://github.com/stitchesjs/stitches/discussions)
 - [GitHub](https://github.com/stitchesjs/stitches)
 
 ---
 
-## Credits
+## Créditos
 
-We're grateful for everyone who contributed and provided feedback along the way.
+Estamos gratos por todos por todas as pessoas que contribuíram e reações fornecidas ao longo do caminho.
 
-Special thanks to [Jonathan Neal](https://twitter.com/jon_neal) for the commitment and dedication to building a best-in-class library, being true to current and future CSS specs.
+Agradecimento especial ao [Jonathan Neal](https://twitter.com/jon_neal) pelo empenho e dedicação para construir a melhor biblioteca em classe, sendo verdadeira a atual e futura especificações da CSS.
 
-Special thanks to [Pedro Duarte](https://twitter.com/peduarte) for the API design, thorough testing, roadmap and documentation.
+Agradecimento especial ao [Pedro Duarte](https://twitter.com/peduarte) pelo desenho da API, testagem meticulosa, mapa da estrada e documentação.
 
-Special thanks to [Abdulhadi Alhallak](https://twitter.com/hadi_hlk) for the relentless wars with TypeScript to provide the best possible developer experience.
+Agradecimento especial ao [Abdulhadi Alhallak](https://twitter.com/hadi_hlk) pelas guerras implacáveis com a TypeScript para fornecer a melhor experiência de programação possível.
 
-Special thanks to [Colm Tuite](https://twitter.com/colmtuite) and [Stephen Haney](https://twitter.com/sdothaney) for bringing Stitches under the Modulz organisation and dedicating a team to maintaining it.
+Agradecimentos especiais aos [Colm Tuite](https://twitter.com/colmtuite) e [Stephen Haney](https://twitter.com/sdothaney) por trazer a Stitches debaixo da organização Modulz e uma equipa dedicada a sua manutenção.
