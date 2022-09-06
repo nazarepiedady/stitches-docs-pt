@@ -1,31 +1,31 @@
 ---
-title: Installation
-description: How to install Stitches and get up and running.
+title: Instalação
+description: Como instalar, preparar, e executar a Stitches.
 ---
 
-### Install Stitches
+### Instalar a Stitches
 
-Install Stitches from your terminal via npm or yarn.
+Instale a Stitches a partir do teu terminal via npm ou yarn.
 
 ```bash
-# With npm
+# Com o npm
 npm install @stitches/react
 
-# With yarn
+# Com o yarn
 yarn add @stitches/react
 ```
 
-### Import it
+### Importe-a
 
-Import `styled` from `@stitches/react`.
+Importe `styled` de `@stitches/react`.
 
 ```js
 import { styled } from '@stitches/react';
 ```
 
-### Use it
+### Utilize-a
 
-Use the `styled` function to create a component and add styles to it.
+Utilize a função `styled` para criar um componente e adicionar estilos à ele.
 
 ```jsx line=3-11
 import { styled } from '@stitches/react';
@@ -41,9 +41,10 @@ const Button = styled('button', {
 });
 ```
 
-### Render it
+### Interprete-a
 
-Finally, render the component.
+Finalmente, interprete o componente.
+
 
 <Preview>
   <DemoButton />
@@ -57,9 +58,9 @@ const Button = styled('button', {...});
 () => <Button>Button</Button>;
 ```
 
-### Available functions
+### Funções disponíveis
 
-Aside from `styled`, these are the other functions available:
+Além de `styled`, estas são as outras funções disponíveis:
 
 ```jsx
 import {
@@ -73,28 +74,28 @@ import {
 } from '@stitches/react';
 ```
 
-Refer to the [API page](/docs/api) to learn more about each of them.
+Consulte a [página da API](/docs/) para aprender mais sobre cada uma delas.
 
-## Configure Stitches
+## Configurar a Stitches
 
-### Create your config file
+### Criar o teu ficheiro de configuração
 
-To configure Stitches, create a `stitches.config.ts` file (`.js` works too) and import the `createStitches` function.
+Para configurar a Stitches, crie um ficheiro `stitches.config.ts` (`.js` também funciona) e importe a função `createStitches`.
 
 ```jsx
 // stitches.config.ts
 import { createStitches } from '@stitches/react';
 ```
 
-This function receives a configuration object:
+Esta função recebe um objeto de configuração:
 
-- `theme`: Define your design [theme](/docs/tokens), which map to CSS properties.
-- `media`: Define reusable responsive [breakpoints](/docs/breakpoints).
-- `utils`: Create custom [utils](/docs/utils) to improve your developer experience.
-- `prefix`: Prefix class names and CSS variables to avoid clashes. [Learn more](/docs/api#prefix).
-- `themeMap`: Define custom mapping of CSS properties to theme tokens. [Learn more](/docs/api#thememap).
+- `theme`: Define o teu [tema](/docs/tokens) de desenho, que delineia para propriedades de CSS.
+- `media`: Define [pontos de quebra](/docs/breakpoints) responsivos e reutilizáveis.
+- `utils`: Cria [utilitários](/docs/utils) personalizados para melhorar tua experiência de programação.
+- `prefix`: Prefixa nomes de classe e variáveis de CSS para evitar colisões. [Aprenda mais](/docs/api#prefix).
+- `themeMap`: Define um delineamento personalizado de propriedades de CSS para símbolos de tema. [Aprenda mais](/docs/api#thememap).
 
-And returns all the [available functions](/docs/installation#available-functions) above.
+E retorna todas as [funções disponíveis](/docs/installation.mdx#funções-disponíveis) acima.
 
 ```js
 // stitches.config.ts
@@ -125,11 +126,11 @@ export const {
 });
 ```
 
-> To see all configuration options, refer to the [API page](/docs/api#createStitches).
+> Para ver todas opções de configuração, consulte a [página da API](/docs/api#createStitches).
 
-### Import and use it
+### Importe e utilize-a
 
-From this point onwards, you'll be importing `styled` and other functions from <H id="one" index="1">stitches.config</H>.
+A partir deste ponto em diante, estarás importando `styled` e outras funções de <H id="one" index="1">stitches.config</H>.
 
 <Preview>
   <DemoButton />
@@ -143,20 +144,20 @@ const Button = styled('button', {...});
 () => <Button>Button</Button>;
 ```
 
-## Using script tags
+## Utilizando marcadores de `script`
 
-If you prefer, you can add Stitches to your site using `script` tags.
+Se preferires, podes adicionar a Stitches ao teu sítio utilizando marcadores de `script`.
 
 ```html
 <script src="https://unpkg.com/@stitches/react" crossorigin></script>
 ```
 
-Then use it like this:
+Depois utilize-a desta maneira:
 
 ```jsx
-// without configuration
+// sem configuração
 const { styled, css, globalCss } = stitches;
 
-// with configuration
+// com configuração
 const { styled } = stitches.createStitches({ ...config });
 ```
