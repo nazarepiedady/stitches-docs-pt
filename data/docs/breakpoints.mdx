@@ -1,9 +1,9 @@
 ---
-title: Breakpoints
-description: Set-up reusable responsive breakpoints.
+title: Pontos de Quebra (breakpoints)
+description: Definir pontos de quebras responsivo e reutilizáveis.
 ---
 
-Define your media at-rules in the `media` object. You can add as many as you need.
+Defina as tuas regras arroba de media no objeto `media`. Tu podes adicionar os quantos que precisares.
 
 ```jsx line=2-6
 export const { styled, css } = createStitches({
@@ -15,17 +15,17 @@ export const { styled, css } = createStitches({
 });
 ```
 
-> Note: Choose the naming convention you prefer. We recommend either <Code>bp1</Code>, <Code>bp2</Code>, <Code>bp3</Code> etc. or <Code>sm</Code>, <Code>md</Code>, <Code>lg</Code> etc.
+> Nota: Escolha a conversão de nomenclatura que preferires. Nós recomendados <Code>bp1</Code>, <Code>bp2</Code>, <Code>bp3</Code> etc. ou <Code>sm</Code>, <Code>md</Code>, <Code>lg</Code> etc.
 
-### Responsive variants
+### Variantes responsivas
 
-Once configured, you can apply different variants at different [breakpoints](/docs/breakpoints).
+Uma vez configurado, podes aplicar diferentes variantes em diferentes [pontos de quebra](/docs/breakpoints).
 
-In the example below, we apply the `violet` color variant at the `bp2` condition.
+No exemplo abaixo, nós aplicamos a variante da cor `violet` na condição `bp2`.
 
 ```jsx line=4-9,12-16
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     color: {
@@ -46,17 +46,17 @@ const Button = styled('button', {
 );
 ```
 
-> Note: If you're using TypeScript, your variants will be typed.
+> Nota: Se estiveres utilizando TypeScript, as tuas variantes serão tipadas.
 
-### Setting an initial variant
+### Definindo uma variante inicial
 
-You must use the <Code>@initial</Code> breakpoint to declare the initial variant before any breakpoints are applied.
+Tu deves utilizar o ponto de quebra <Code>@initial</Code> para declarar a variante inicial antes de quaisquer pontos de quebra serem aplicados.
 
-In the example below, we apply `gray` initially, then the `violet` color variant at the `bp2` condition.
+No exemplo abaixo, nós aplicamos inicialmente o `gray`, depois da variante da cor `violet` na condição `bp2`.
 
 ```jsx line=4-9,12-16
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     color: {
@@ -78,16 +78,16 @@ const Button = styled('button', {
 );
 ```
 
-### Using breakpoints in the style objects
+### Utilizando pontos de quebra nos objetos de estilo
 
 ```jsx line=4-6
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '@bp1': {
-    // Styles for bp1
+    // Estilos para bp1 (ponto de quebra número 1)
   },
 });
 ```
 
-> Note: In most cases, we do not recommend applying responsive breakpoints inline. Ideally, your component styles should be immutable.
+> Nota: Na maioria dos casos, nós não recomendamos a aplicação de pontos de quebra responsivos em linha. Idealmente, os estilos do teu componente devem ser imutáveis.
