@@ -1,15 +1,15 @@
 ---
-title: Styling
-description: Basic styling examples with Stitches.
+title: Estilização
+description: Exemplos de estilização básica com a Stitches.
 ---
 
-### Object syntax
+### Sintaxe de objeto
 
-In order to keep the bundle size to a minimum, Stitches uses JavaScript object notation rather than string syntax. Below, are examples of all of the common use cases.
+Para manter o tamanho do pacote no mínimo, a Stitches utiliza a notação de objeto da JavaScript no lugar da sintaxe de sequência de caracteres. Abaixo, estão exemplos de todos os casos de uso comuns.
 
-### Global styles
+### Estilos globais
 
-For handling things like global resets, you can write global CSS styles. The `globalCss` function will return another function, which you must call in your app.
+Para manipulação de coisas como redefinições globais, podes escrever estilos de CSS globais. A função `globalCSS` retornará uma outra função, que deves chamar na tua aplicação.
 
 ```jsx line=1-3,6
 const globalStyles = globalCss({
@@ -23,7 +23,7 @@ const globalStyles = globalCss({
 };
 ```
 
-### Base styles
+### Estilos de base
 
 <Preview>
   <DemoButton />
@@ -40,7 +40,7 @@ const Button = styled('button', {
 () => <Button>Button</Button>;
 ```
 
-### Pseudo-class
+### Pseudo-classe
 
 <Preview>
   <DemoButton />
@@ -48,7 +48,7 @@ const Button = styled('button', {
 
 ```jsx line=4-6
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '&:hover': {
     backgroundColor: 'lightgray',
@@ -58,9 +58,9 @@ const Button = styled('button', {
 () => <Button>Button</Button>;
 ```
 
-> Note: you must use the `&` sign to chain selectors.
+> Nota: deves utilizar o sinal `&` para prender os seletores.
 
-### Pseudo-element
+### Pseudo-elemento
 
 <Preview>
   <DemoButton
@@ -84,7 +84,7 @@ const Button = styled('button', {
 
 ```jsx line=4-15
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '&::before': {
     content: `''`,
@@ -103,9 +103,9 @@ const Button = styled('button', {
 () => <Button>Button</Button>;
 ```
 
-> Note: you must use the `&` sign to chain selectors.
+> Nota: deves utilizar o sinal `&` para prender os seletores.
 
-### Class selector
+### Seletor de classe
 
 <Preview>
   <DemoButton
@@ -120,7 +120,7 @@ const Button = styled('button', {
 
 ```jsx line=4-6
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '&.custom-class': {
     boxShadow: '0 0 0 3px blueviolet',
@@ -130,11 +130,11 @@ const Button = styled('button', {
 () => <Button className="__custom-class__">Button</Button>;
 ```
 
-In addition to the class selector, you can style all other available basic selectors such as [ID selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors), [attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors), [universal selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors), and [type selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors).
+Além do seletor de classe, podes estilizar todos os outros seletores básicos disponíveis tais como [seletores de ID](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors), [seletores de atributo](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors), [seletores universais](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors), e [seletores de tipos](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors).
 
-> Note: you must use the `&` sign to chain selectors.
+> Nota: deves utilizar o sinal `&` para prender os seletores.
 
-### Attribute selector
+### Seletor de atributo
 
 <Preview>
   <DemoButton
@@ -149,7 +149,7 @@ In addition to the class selector, you can style all other available basic selec
 
 ```jsx line=4-6
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '&[data-custom-attribute]': {
     boxShadow: '0 0 0 3px royalblue',
@@ -159,14 +159,13 @@ const Button = styled('button', {
 () => <Button __data-custom-attribute__>Button</Button>;
 ```
 
-> Note: you must use the `&` sign to chain selectors.
+> Nota: deves utilizar o sinal `&` para prender os seletores.
 
-### Descendant selector
+### Seletor de descendente
 
 {
 
 <Preview>
-
   <DemoButton
     css={{
       svg: {
@@ -183,11 +182,12 @@ const Button = styled('button', {
     </svg>
   </DemoButton>
 </Preview>
+
 }
 
 ```jsx line=4-9
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '& svg': {
     display: 'inline-block',
@@ -204,7 +204,7 @@ const Button = styled('button', {
 );
 ```
 
-### Combinator selectors
+### Seletores de combinadores
 
 <Preview>
   <DemoButton
@@ -225,7 +225,7 @@ const Button = styled('button', {
 
 ```jsx line=4-6
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '& + button': {
     marginLeft: '10px',
@@ -240,7 +240,7 @@ const Button = styled('button', {
 );
 ```
 
-### Target a Stitches component
+### Apontar um componente de Stitches
 
 {
 
@@ -270,7 +270,7 @@ const Icon = styled('svg', {
 });
 
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   [`& ${Icon}`]: {
     marginLeft: '5px',
@@ -285,12 +285,11 @@ const Button = styled('button', {
 );
 ```
 
-### Target a React component
+### Apontar um componente de React
 
 {
 
 <Preview>
-
   <DemoButton
     css={{
       svg: {
@@ -306,6 +305,7 @@ const Button = styled('button', {
     </svg>
   </DemoButton>
 </Preview>
+
 }
 
 ```jsx line=5-6,10-15
@@ -313,11 +313,11 @@ const RightArrow = () => (
   <svg className="right-arrow" ... />
 );
 
-// add a `toString` method
+// adiciona um método `toString`
 RightArrow.toString = () => '.right-arrow';
 
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   [`& ${RightArrow}`]: {
     display: 'inline-block',
@@ -329,9 +329,9 @@ const Button = styled('button', {
 () => <Button>Button <RightArrow /></Button>;
 ```
 
-> Remember to add the `toString` method on your component. That needs to return a string matching the desired selector. The selector can be anything you want.
+> Lembra-te de adicionar o método `toString` no teu componente. Este precisa retornar uma sequência de caracteres correspondendo o seletor desejado. O seletor pode ser qualquer coisa que quiseres.
 
-### Keyframe animations
+### Animações de keyframe
 
 ```jsx line=1-4,8-11
 const scaleUp = keyframes({
@@ -340,7 +340,7 @@ const scaleUp = keyframes({
 });
 
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '&:hover': {
     animation: `${scaleUp} 200ms`,
@@ -348,13 +348,13 @@ const Button = styled('button', {
 });
 ```
 
-### At-rule statements
+### Declarações de regra arroba
 
-You can use at-rules rules in the `globalCss`, `styled` and `css` functions.
+Tu podes utilizar regras de regras arroba nas funções `globalCss`, `styled` e `css`.
 
 ```jsx line=4-6,9
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   '@media (prefers-reduced-motion)': {
     transition: 'none',
@@ -362,11 +362,11 @@ const Button = styled('button', {
 });
 ```
 
-> Note: The `&` qualifier is not required for at-rule statements.
+> Nota: O qualificador `&` não é obrigatório para declarações de regra arroba.
 
-### Import rules
+### Importar regras
 
-You can use `@import` rules within the `globalCss` function.
+Tu podes utilizar as regras `@import` dentro da função `globalCss`.
 
 ```jsx
 const globalStyles = globalCss({
@@ -374,7 +374,7 @@ const globalStyles = globalCss({
 });
 ```
 
-Or if you need multiple values, use an array:
+Ou caso precisares de vários valores, utilize um arranjo:
 
 ```jsx line=2
 const globalStyles = globalCss({
@@ -382,9 +382,9 @@ const globalStyles = globalCss({
 });
 ```
 
-### Font face rules
+### Regras de rosto da fonte
 
-You can use `@font-face` rules within the `globalCss` function.
+Tu podes utilizar as regras `@font-face` dentro da função `globalCss`.
 
 ```jsx
 const globalStyles = globalCss({
@@ -395,7 +395,7 @@ const globalStyles = globalCss({
 });
 ```
 
-Or if you need multiple values, use an array:
+Ou caso precisares de vários valores, utilize um arranjo:
 
 ```jsx line=2-11
 const globalStyles = globalCss({
@@ -412,9 +412,9 @@ const globalStyles = globalCss({
 });
 ```
 
-### Supports rule
+### Regra de suportes
 
-You can use `@supports` rules in the `globalCss`, `styled` and `css` functions.
+Tu podes utilizar as regras `@supports` nas funções `globalCss`, `styled` e `css`.
 
 ```jsx
 const globalStyles = globalCss({
@@ -432,11 +432,11 @@ const Grid = styled('div', {
 });
 ```
 
-### Token aware values
+### Valores de consciência simbólica
 
-Stitches is aware of your tokens by using a [property-to-token mapping](/docs/tokens#property-mapping). To apply a token you need to prefix it with a `$` sign.
+A Stitches está consciente dos teus simbólicos pela utilização de um [mapeamento de propriedade-para-simbólico](/docs/tokens#mapeamento-de-propriedade). Para aplicar um simbólico precisas prefixá-lo com um sinal `$`.
 
-For example, the `backgroundColor` property automatically maps to the `colors` tokens.
+Por exemplo, a propriedade `backgroundColor` delineia automaticamente para os simbólicos `colors`.
 
 ```jsx
 import { createStitches } from '@stitches/react';
@@ -454,24 +454,24 @@ const Button = styled('button', {
 });
 ```
 
-### Scale-prefixed tokens
+### Simbólicos de escala prefixada
 
-You can pick a token from any of your available [theme](/docs/tokens) scales by prefixing them with the scale name.
+Tu podes pegar um simbólico de qualquer uma das tuas escalas de [tema](/docs/tokens) disponível ao prefixá-los com o nome da escala.
 
 ```jsx
 const Button = styled('button', {
-  // apply a color token to a locally scoped token
+  // aplica um simbólico de `color` à um simbólico insolado localmente
   $$shadowColor: '$colors$purple500',
   boxShadow: '0 0 0 15px $$shadowColor'
 
-  // use a token from the sizes scale
+  // utilize um simbólico de escala de tamanhos
   marginTop: '$sizes$1'
 })
 ```
 
-### Locally scoped tokens
+### Simbólicos insolados localmente
 
-You can create locally scoped tokens by defining them with a `$$`.
+Tu podes criar simbólicos insolados localmente ao defini-los com um `$$`.
 
 <Preview>
   <DemoButton
@@ -496,9 +496,9 @@ const Button = styled('button', {
 });
 ```
 
-### Theme specific styles
+### Tema de estilos especifico
 
-You can add styles based on themes by retrieving the dynamically generated [theme](/docs/api#theme-1) class.
+Tu podes adicionar estilos com base nos temas ao recuperar a classe de [tema](/docs/api#theme-1) gerada dinamicamente.
 
 ```jsx line=7,14-16,20-22
 import { createStitches } from '@stitches/react';
@@ -526,11 +526,11 @@ const Button = styled('button', {
 );
 ```
 
-> Themes return a class name, not a selector, so make sure to prefix it with a `.` (dot).
+> Os temas retornam um nome de classe, e não um seletor, então certifica-te de prefixá-la com um *ponto* `.`.
 
-### Numeric values
+### Valores numérico
 
-Just like with React, jQuery, and other libraries, Stitches converts numeric values to `px`, if the CSS property doesn't accept unitless values.
+Tal como com a React, JQuery, e outras bibliotecas, a Stitches converte valores numéricos para `px`, se a propriedade de CSS não aceitar valores sem unidades.
 
 ```jsx
 {
