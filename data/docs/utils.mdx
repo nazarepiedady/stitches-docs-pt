@@ -1,14 +1,14 @@
 ---
-title: Utils
-description: Create custom utils for a smoother developer experience.
+title: Utilitários
+description: Crie utilitários personalizados para uma experiência de programação mais agradável.
 ---
 
-Create your own CSS properties in the `utils` object. Add as many utils as you need. Below are a few examples:
+Crie as tuas próprias propriedades de CSS no objeto `utils`. Adicione quantos utilitários precisares. Abaixo está alguns exemplos:
 
 ```jsx
 export const { styled, css } = createStitches({
   utils: {
-    // Abbreviated margin properties
+    // Propriedades de margens abreviadas
     m: (value) => ({
       margin: value,
     }),
@@ -33,18 +33,18 @@ export const { styled, css } = createStitches({
       marginBottom: value,
     }),
 
-    // A property for applying width/height together
+    // Um propriedade para aplicação em conjunto de `width` e de `height`
     size: (value) => ({
       width: value,
       height: value,
     }),
 
-    // A property to apply linear gradient
+    // Uma propriedade aplicar gradiente linear
     linearGradient: (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
 
-    // An abbreviated property for border-radius
+    // Um propriedade abreviada para `border-radius`
     br: (value) => ({
       borderRadius: value,
     }),
@@ -52,7 +52,7 @@ export const { styled, css } = createStitches({
 });
 ```
 
-> `value` will be the value passed in via the CSS property.
+> `value` será o valor passado através da propriedade de CSS.
 
 {
 
