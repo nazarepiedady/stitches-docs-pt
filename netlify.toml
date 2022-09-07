@@ -2,5 +2,5 @@
 NPM_FLAGS="--install --force"
 
 [build]
-command = "yarn build"
+command = "yarn run build"
 publish = "docs/"
