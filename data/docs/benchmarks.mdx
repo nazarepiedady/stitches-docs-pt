@@ -1,23 +1,23 @@
 ---
-title: Benchmarks
-description: Performance tests and comparisons.
+title: Pontos de Referências
+description: Testes de desempenho e comparações.
 ---
 
-## The tests
+## Os testes
 
-We've put together a test suite to test a range of perfomance factors across multiple CSS-in-JS libraries.
+Nós juntamos um conjunto de teste para testar uma gama de fatores desempenho através de várias bibliotecas de CSS-em-JS ou CSS-in-JS.
 
-All tests use object notation. All tests were run in a production environment, on a machine with the following spec:
+Todos os testes utilizam notação de objeto. Todos os testes foram executados em um ambiente de produção, em uma maquina com as seguintes especificações:
 
 - Macbook Pro 2019
 - 2.3Ghz 8-core i9
 - 32GB 2667 MHz DDR4
 
-Just like Stitches, our [benchmark tests](https://github.com/stitchesjs/stitches-bench) are also open-source.
+Tal como a Stitches, nossos [testes de ponto de referência](https://github.com/stitchesjs/stitches-bench) também são de código-aberto.
 
-### Initial injection
+### Injeção inicial
 
-The timing that it takes to inject the initial styles. This happens when a component is rendered.
+O tempo que ela leva para injetar os estilos inicias. Isto acontece quando um componente é interpretado.
 
 {
 
@@ -30,9 +30,9 @@ The timing that it takes to inject the initial styles. This happens when a compo
 />
 }
 
-### Updating variants
+### Atualizando variantes
 
-Changing the variants is now faster than ever. Since variants can be conditionally applied, we ensure this happens as fast as possible.
+A mudança de variantes agora está mais rápida do que nunca. Visto que as variantes podem ser aplicadas condicionalmente, nós garantimos que isto aconteça o mais rápido possível.
 
 {
 
@@ -45,11 +45,11 @@ Changing the variants is now faster than ever. Since variants can be conditional
 />
 }
 
-> Note: Since styled-components and Emotion don't offer a first-class variant API, this was done via prop interpolation.
+> Nota: Visto que a `styled-components` e a `Emotion` não oferecem uma API de variante de primeira classe, isto foi feito através da interpolação de propriedade.
 
-### Updating `css` prop
+### Atualizando a propriedade `css`
 
-The `css` prop is useful for setting styles at the consumption layer. These styles need to be converted to CSS rules and injected to the DOM. This needs to happen fast - and it does!
+A propriedade `css` é útil para definição de estilos na camada de consumo. Estes estilos precisam ser convertidos em regras de CSS e injetados no DOM. Isto precisa acontecer rápido - e acontece!
 
 {
 
@@ -62,11 +62,12 @@ The `css` prop is useful for setting styles at the consumption layer. These styl
 />
 }
 
-> Note: Since styled-components and Emotion don't offer a first-class `css` prop API without the need of Babel, this was done via prop interpolation.
+> Nota: Visto que a `styled-components` e a `Emotion` não oferecem uma API de propriedade `css` de primeira classe sem a necessidade do Babel, isto foi feito através da interpolação de propriedade.
 
-### Dynamic styles
 
-In this test, we render the Sierpinski Triangle. Each node is a different color, to ensure styles are dynamic.
+### Estilos dinâmicos
+
+Neste teste, nós interpretamos o Triângulo Sierpinski. Cada nó é de uma cor diferente, para garantir que os estilos são dinâmicos.
 
 {
 
@@ -79,11 +80,11 @@ In this test, we render the Sierpinski Triangle. Each node is a different color,
 />
 }
 
-> Note: This test was taken from the [styled-components benchmarks](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). Emotion also tests against this.
+> Nota: Este teste foi tirado do [ponto de referência da `styled-components`](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). A Emotion também testa contra isto.
 
-### Mounting deep tree
+### Montando uma árvore profunda
 
-In this test, we mount a tree with many nested nodes.
+Neste teste, nós montamos uma árvore com vários nós encaixados.
 
 {
 
@@ -96,11 +97,11 @@ In this test, we mount a tree with many nested nodes.
 />
 }
 
-> Note: This test was taken from the [styled-components benchmarks](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). Emotion also tests against this.
+> Nota: Este teste foi tirado do [ponto de referência da `styled-components`](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). A `Emotion` também testa contra isto.
 
-### Mount wide tree
+### Montar árvore extensa
 
-In this test, we mount a tree with many sibling nodes.
+Neste teste, nós montamos uma árvore com vários nós irmãos.
 
 {
 
@@ -113,10 +114,10 @@ In this test, we mount a tree with many sibling nodes.
 />
 }
 
-> Note: This test was taken from the [styled-components benchmarks](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). Emotion also tests against this.
+> Nota: Este teste foi tirado do [ponto de referência da `styled-components`](https://github.com/styled-components/styled-components/tree/main/packages/benchmarks). A `Emotion` também testa contra isto.
 
-## Summary
+## Sumário
 
-Our benchmarks compare against styled-components and Emotion because they're the most popular CSS-in-JS libraries, and they've pushed us to improve our performance. Our goal with these benchmarks is to provide transparent performance comparisons for the community.
+Nossos pontos de referências comparam-se contra a `styled-components` e a `Emotion` porque são as bibliotecas de CSS-em-JS mais populares, elas nos levaram a melhorar o nosso desempenho. Nosso objetivo com estes pontos de referências é fornecer comparações de desempenho transparentes para a comunidade.
 
-If you'd like us to include your CSS-in-JS library, or think the tests could be improved, please [open an issue](https://github.com/stitchesjs/stitches-bench).
+Se gostarias que nós incluíssemos a tua biblioteca de CSS-em-JS, ou achas que os testes poderiam ser melhorados, faça o favor de [abrir um questão](https://github.com/stitchesjs/stitches-bench).
