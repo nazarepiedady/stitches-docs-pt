@@ -1,28 +1,29 @@
 ---
 title: TypeScript
-description: Out of the box TypeScript experience.
+description: Experiência de TypeScript fora da caixa.
 ---
 
-Stitches provides typing out of the box, but this page contains some further utilities and tips.
+A Stitches fornece tipagem fora da caixa, mas esta página contém alguns utilitários e dicas avançadas.
 
-## Importing types
+## Importando os tipos
 
-You can import all the types at once:
+Tu podes importar todos os tipos de uma só vez:
 
 ```tsx
 import type * as Stitches from '@stitches/react';
 ```
 
 These include:
+Estes incluem:
 
 - `Stitches.CSS`
 - `Stitches.VariantProps`
 - `Stitches.PropertyValue`
 - `Stitches.ScaleValue`
 
-## Type a CSS object
+## Aplicar um tipo a um objeto CSS
 
-The recommended way to share styles across components is to create them via the `css` or the `styled` functions. This way you'll get typing for free.
+O maneira recomendada de partilhar estilos entre os componentes é criá-los através das funções `css` ou `styled`. Desta maneira receberás a tipagem como bonus.
 
 ```tsx
 import { css, styled } from '@stitches/react';
@@ -33,7 +34,7 @@ const Text = styled('span', sharedColor, sharedTypography);
 const Heading = styled('h1', Text);
 ```
 
-But you can use `Stitches.CSS` to type it manually.
+Mas podes utilizar `Stitches.CSS` para aplicar o tipo nele manualmente.
 
 ```tsx
 import { styled } from '@stitches/react';
@@ -45,7 +46,7 @@ const Text = styled('span', sharedColor, sharedTypography);
 const Heading = styled('h1', Text);
 ```
 
-If you've configured Stitches, make sure to pass your `config` to the `Stitches.CSS` generic.
+Se configuraste a Stitches, certifica-te de passar a tua `config` para o genérico `Stitches.CSS`.
 
 ```tsx
 import { createStitches } from '@stitches/react';
@@ -60,7 +61,7 @@ const Text = styled('span', sharedColor, sharedTypography);
 const Heading = styled('h1', Text);
 ```
 
-The `Stitches.CSS` utility is also useful for when creating custom components that accept a `css` prop:
+O utilitário `Stitches.CSS` também é útil para quando estiveres criando componentes personalizados que aceitem uma propriedade `css`:
 
 ```tsx
 import { styled } from '@stitches/react';
@@ -68,16 +69,16 @@ import type * as Stitches from '@stitches/react';
 
 const Button = styled('button', {});
 
-// Use `Stitches.CSS` or the configured type as shown above
+// Utilize `Stitches.CSS` ou o tipo configurado como mostrado acima
 type MyButtonProps = { css?: Stitches.CSS };
 const MyButton = function (props: MyButtonProps) {
   return <Button {...props} />;
 };
 ```
 
-## Extract variants from a component
+## Extrair as variantes de um componente
 
-You can use the `Stitches.VariantProps` utility to extract variants from a component. This ensures your variants support responsive syntax.
+Tu podes utilizar o utilitário `Stitches.VariantProps` para extrair variantes de um componente. Isto garante que as tuas variantes suportem a sintaxe adaptável.
 
 ```tsx
 import { css, styled } from '@stitches/react';
@@ -105,14 +106,14 @@ type CSSButtonVariants = Stitches.VariantProps<typeof cssButton>
 type StyledButtonVariants = Stitches.VariantProps<typeof StyledButton>
 ```
 
-## Type utils as CSS Properties and tokens
+## Aplicar tipos aos utilitários como propriedades de CSS e objetos simbólicos
 
-Use the `Stitches.PropertyValue` utility when the value can be:
+Utilize o utilitário `Stitches.PropertyValue` quando o valor pode ser:
 
-- a valid value of a given CSS property.
-- a valid token of its mapped theme map.
+- um valor válido de uma dada propriedade de CSS.
+- um objeto simbólico válido do seu mapa de tema mapeado.
 
-This utility receives one argument, and it's a CSS property.
+Este utilitário recebe um argumento, e é uma propriedade de CSS.
 
 ```tsx
 import type * as Stitches from '@stitches/react';
@@ -132,20 +133,20 @@ const { styled } = createStitches({
 });
 
 const Box = styled('div', {
-  // TypeScript will suggest valid values and tokens
-  // values such as `red`, `inherit`, `transparent`, etc
-  // tokens such as `$primary` and `$secondary`
+  // TypeScript sugerirá valores e valores de objetos simbólicos válidos
+  // tais como `red`, `inherit`, `transparent`, etc
+  // objetos simbólicos tais como `$primary` e `$secondary`
   __bc__: '$primary'
 })
 ```
 
-## Type utils as tokens only
+## Aplicar tipos aos utilitários tais como apenas objetos simbólicos
 
-Use the `Stitches.ScaleValue` utility when the value can be:
+Utilize o utilitário `Stitches.ScaleValue` quando o valor pode ser:
 
-- a valid token of its mapped theme map.
+- um objeto simbólico válido do seu mapa de tema mapeado.
 
-This utility receives one argument, and it's a scale name.
+Este utilitário recebe um argumento, e é um nome de escala.
 
 ```tsx
 import type * as Stitches from '@stitches/react';
@@ -165,19 +166,19 @@ const { styled } = createStitches({
 });
 
 const Box = styled('div', {
-  // TypeScript will suggest valid tokens
-  // tokens such as `$1` and `$2`
+  // TypeScript sugerirá objetos simbólicos validos
+  // objetos simbólicos tais como `$1` e `$2`
   __mt__: '$1'
 })
 ```
 
-## Stricter experience
+## Experiência restritiva
 
-Here are some tips if you want a more strict experience.
+Cá estão algumas dicas se quiseres uma experiência mais restrita.
 
-### Using tokens
+### Utilizando os objetos simbólicos
 
-Use the `theme` object to access your tokens, this way, you can rely on TypeScript to rename them. This will also give you an error if a token is removed.
+Utilize o objeto `theme` para acessar os teus objetos simbólicos, desta maneira, podes confiar na TypeScript para renomeá-los. Isto também dar-te-á um erro se um objeto simbólico for removido.
 
 ```jsx
 import { createStitches } from '@stitches/react';
