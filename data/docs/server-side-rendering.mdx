@@ -1,9 +1,9 @@
 ---
-title: Server-Side Rendering
-description: How to configure server-side rendering.
+title: Interpretação no Lado do Servidor
+description: Como configurar a interpretação no lado do servidor.
 ---
 
-You can get access to the CSS string by using the `getCssText` function. This function is made available by the `createStitches` function.
+Tu podes obter acesso a sequência de caracteres de CSS pela utilização da função `getCssText`. Esta função é tornada disponível pela função `createStitches`.
 
 ```jsx
 import { createStitches } from '@stitches/react';
@@ -11,11 +11,11 @@ import { createStitches } from '@stitches/react';
 export const { __getCssText__ } = createStitches();
 ```
 
-The `getCssText` will give you all the CSS you need to server-side render it.
+A `getCssText` te dará toda CSS que precisares para interpretá-la no lado do servidor.
 
-For a better hydration strategy, we highly recommend adding an `id="stitches"` to your `style` tag.
+Para uma melhor estratégia de hidratação, recomendamos fortemente a adição de um `id="stitches"` ao teu marcador `style`.
 
-Here's an example of SSR with Next.js
+Cá está um exemplo de SSR com a Next.js
 
 ```jsx line=3,10
 import React from 'react';
@@ -39,4 +39,4 @@ export default class Document extends NextDocument {
 }
 ```
 
-> Note: If using React, make sure to add your styles in `dangerouslySetInnerHTML`.
+> Nota: Se estiveres a utilizar a React, certifique-se de adicionar os teus estilos no `dangerouslySetInnerHTML`.
