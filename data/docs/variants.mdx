@@ -1,11 +1,11 @@
 ---
-title: Variants
-description: Stitches supports a first-class variant API.
+title: Variantes
+description: A Stitches suporta uma API de variante de primeira classe.
 ---
 
-### Adding variants
+### Adicionando variantes
 
-You can add variants by using the `variants` key. There is no limit to how many variants you can add.
+Tu podes adicionar variantes utilizando a chave `variants`. Não existe limite de quantas variantes podes adicionar.
 
 <Preview>
   <div style={{ display: 'flex', gap: '20px' }}>
@@ -16,7 +16,7 @@ You can add variants by using the `variants` key. There is no limit to how many 
 
 ```jsx line=4-20,23
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     color: {
@@ -40,9 +40,9 @@ const Button = styled('button', {
 () => <Button color="violet">Button</Button>;
 ```
 
-A variant accepts the same style object as the [base styles](/docs/styling).
+Uma variante aceita o mesmo objeto de estilo como o [estilos de base](/docs/styling).
 
-### Multiple variants
+### Várias variantes
 
 <Preview>
   <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -55,7 +55,7 @@ A variant accepts the same style object as the [base styles](/docs/styling).
 
 ```jsx line=4-23,26-30
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     color: {
@@ -86,9 +86,9 @@ const Button = styled('button', {
 );
 ```
 
-### Boolean variants
+### Variantes booleanas
 
-Variants can be booleans by using `true` as the key.
+As variantes podem ser booleanas com o uso de `true` como chave.
 
 <Preview>
   <DemoButton outlined />
@@ -96,7 +96,7 @@ Variants can be booleans by using `true` as the key.
 
 ```jsx line=4-10,13
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     outlined: {
@@ -110,9 +110,9 @@ const Button = styled('button', {
 () => <Button outlined>Button</Button>;
 ```
 
-### Compound variants
+### Variantes compostas
 
-In the case of needing to set styles of a variant, based on a combination of other variants, you can use the `compoundVariants` feature.
+No caso de precisar definir estilos de uma variante, com base em uma combinação de outras variantes, podes utilizar a funcionalidade `compoundVariants`.
 
 <Preview>
   <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -168,9 +168,9 @@ const Button = styled('button', {
 );
 ```
 
-### Default variants
+### Variantes padrão
 
-You can use the `defaultVariants` feature to set a variant by default:
+Tu podes utilizar a funcionalidade `defaultVariants` para definir uma variante por padrão:
 
 ```jsx line=11-13,16
 const Button = styled('button', {
@@ -191,15 +191,15 @@ const Button = styled('button', {
 () => <Button>Button</Button>
 ```
 
-### Responsive variants
+### Variantes adaptáveis
 
-Once configured, you can apply different variants at different [breakpoints](/docs/breakpoints). You must use the <Code>@initial</Code> breakpoint to declare the initial variant before any breakpoints are applied.
+Uma vez configurada, podes aplicar variantes diferentes em diferentes [pontos de quebra](/docs/breakpoints). Tu deves utilizar o ponto de quebra <Code>@initial</Code> para declarar a variante inicial antes de quaisquer pontos de quebra serem aplicados.
 
-In the example below, we apply `gray` initially, then the `violet` color variant at the `@bp1` condition.
+No exemplo abaixo, aplicamos inicialmente o `gray`, depois a variante de cor `violet` na condição `@bp1`.
 
 ```jsx line=12-16
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 
   variants: {
     color: {
