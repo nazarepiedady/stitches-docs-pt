@@ -1,13 +1,13 @@
 ---
-title: Overriding Styles
-description: How to override styles in the consumption layer.
+title: Sobrepondo Estilos
+description: Como sobrepor estilos na camada de consumo.
 ---
 
-Stitches provides a `css` prop for overriding styles easily. It’s like the style attribute, but it supports tokens, media queries, nesting and token-aware values.
+A Stitches fornece uma propriedade `css` para sobrepor facilmente os estilos. É como o atributo `style`, exceto que ela suporta simbólicos, consultas de media, encaixamento e valores de consciência simbólica.
 
-### The `css` prop
+### A propriedade `css`
 
-All Stitches Components include a `css` prop. Use it to pass in overrides.
+Todos os componentes da Stitches incluem uma propriedade `css`. Utilize-a para passar as sobreposições.
 
 {
 
@@ -42,7 +42,7 @@ const Button = styled('button', {});
 );
 ```
 
-You can use tokens in the `css` prop.
+Tu podes utilizar os simbólicos na propriedade `css`.
 
 {
 
@@ -75,7 +75,7 @@ const Button = styled('button', {});
 );
 ```
 
-You can also use media queries in the `css` prop.
+Tu também podes utilizar consultas de media na propriedade `css`.
 
 {
 
@@ -112,11 +112,11 @@ const Button = styled('button', {});
 );
 ```
 
-### Merging `css` prop on custom components
+### Submergindo a propriedade `css` nos componentes personalizados
 
-You may want to make the `css` prop available on a custom component which already contains some pre-defined overrides.
+Tu talvez queiras tornar a propriedade `css` disponível em um componente personalizado que já contém algumas sobreposições predefinidas.
 
-If you're setting responsive styles, you need to make sure to deep merge the style objects.
+Se estiveres configurando estilos adaptáveis, precisas certificar-te de fazer uma fusão profunda dos objetos de estilo.
 
 ```jsx
 const PageTitle = styled('h1', {});
@@ -153,11 +153,11 @@ function BlogTitle({ css, ...props }) {
 );
 ```
 
-> Note: You can use `lodash.merge` to do that for you!
+> Nota: Tu podes utilizar `lodash.merge` para fazer isto por ti!
 
-### Overriding the HTML tag
+### Sobrepondo o marcador de HTML
 
-Stitches provides an `as` prop for changing which tag a component outputs.
+A Stitches fornece uma propriedade `as` para mudar qual marcador um componente produz.
 
 {
 
