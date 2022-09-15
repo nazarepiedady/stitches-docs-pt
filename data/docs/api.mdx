@@ -1,64 +1,65 @@
 ---
 title: API
-description: The nuts and bolts of Stitches' API.
+description: O básico da API da Stitches.
 ---
 
 ## styled
 
-A function to create a component including its styles and variants. It receives:
+Uma função que cria um componente incluindo seus estilos e variantes. Ela recebe:
 
-- `element` or `component`: a HTML element (`div`) or a React Component (`Component`)
-- `styles`: as many `styleObject` as you need
+- `elemento (element)` ou `componente (component)`: um elemento de HTML (`div`) ou um componente de React (`Component`)
+- `estilos (styles)`: quantos `styleObject` precisares
 
 ```jsx
 const Button = styled('button', {
   // base styles
+  // estilos de base
 
   variants: {
     variant: {
       primary: {
-        // primary styles
+        // estilos primários
       },
       secondary: {
-        // secondary styles
+        // estilos secundários
       },
     },
   },
 });
 
-// Use it
+// Utilize-o
 <Button>Button</Button>
 <Button variant="primary">Primary button</Button>
 ```
 
 ## css
 
-A function to generate class names from a style object. It receives as many `styleObject` as you need.
+Uma função para gerar nomes de classes de um objeto de estilo. Ela recebe quantos `styleObject` precisares.
 
 ```jsx
 const button = css({
-  // base styles
+  // estilos de base
 
   variants: {
     variant: {
       primary: {
-        // primary styles
+        // estilos primários
       },
       secondary: {
-        // secondary styles
+        // estilos secundários
       },
     },
   },
 });
 
-// Use it
+// Utilize-o
 <div className={button()}>Button</div>
 <div className={button({ variant: 'primary' })}>Primary button</div>
 ```
 
 ## globalCss
 
-For handling things like global resets, you can write global CSS styles.
+Para manipulação de coisas como reajustes globais, podes escrever estilos de CSS globais.
 
 ```jsx
 const globalStyles = globalCss({
@@ -73,7 +74,7 @@ const globalStyles = globalCss({
 
 ## keyframes
 
-A function to create a global CSS `@keyframe` rule.
+Um função para criar um regra `@keyframe` de CSS global.
 
 ```jsx
 const scaleUp = keyframes({
@@ -90,7 +91,7 @@ const Button = styled('button', {
 
 ## getCssText
 
-A function to generate styles on the [server-side](/docs/server-side-rendering).
+Uma função para gerar estilos no [lado do servidor](/docs/server-side-rendering).
 
 ```jsx
 <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
@@ -98,7 +99,7 @@ A function to generate styles on the [server-side](/docs/server-side-rendering).
 
 ## defaultThemeMap
 
-You can import `defaultThemeMap` if you want to merge with the [default mapping](https://github.com/stitchesjs/stitches/blob/canary/packages/core/src/default/defaultThemeMap.js).
+Tu podes importar `defaultThemeMap` se quiseres combinar com o [mapeamento padrão](https://github.com/stitchesjs/stitches/blob/canary/packages/core/src/default/defaultThemeMap.js).
 
 ```jsx line=1,5
 import { createStitches, defaultThemeMap } from '@stitches/react';
@@ -114,7 +115,7 @@ createStitches({
 
 ## createStitches
 
-This function is used to configure Stitches. You can use this function if you need to add default theme tokens, custom utilities, media queries, etc.
+Esta função é utilizada para configurar a Stitches. Tu podes utilizar esta função se precisares de adicionar simbólicos de tema padrão, utilitários personalizadas, consultas de media, etc.
 
 ```js
 import { createStitches } from '@stitches/react';
@@ -128,16 +129,16 @@ createStitches({
 });
 ```
 
-The `createStitches` function returns the following:
+A função `createStitches` retorna o seguinte:
 
-- `styled`: a function to create React components with styles.
-- `css`: a function to create CSS rules.
-- `globalCss`: a function to create global styles.
-- `keyframes`: a function to create keyframes.
-- `theme`: a function for accessing default theme data.
-- `createTheme`: a function for creating additional themes.
-- `getCssText`: a function get styles as a string, useful for SSR.
-- `config`: an object containing the hydrated config.
+- `styled`: uma função para criar componentes de React com estilos.
+- `css`: uma função para criar regras de CSS.
+- `globalCss`: uma função para criar estilos globais.
+- `keyframes`: uma função para criar `keyframes`.
+- `theme`: uma função para acessar dados do tema padrão.
+- `createTheme`: uma função para criar temas adicionais.
+- `getCssText`: uma função que recebe estilos como uma sequência de caracteres, útil para Interpretação no Lado do Servidor (SSR, sigla em Inglês).
+- `config`: um objeto contendo um configuração hidratada.
 
 ```js
 const {
@@ -154,7 +155,7 @@ const {
 
 ### theme
 
-Set up your design [theme tokens](/docs/tokens). You can then use them in the style object.
+Define os teus [simbólicos de tema](/docs/tokens) do desenho. Tu podes então utilizá-los no objeto de estilo.
 
 ```jsx line=2-17
 createStitches({
@@ -179,7 +180,7 @@ createStitches({
 
 ### media
 
-Set up reusable [breakpoints](/docs/breakpoints).
+Define [pontos de quebra](/docs/breakpoints) reutilizáveis.
 
 ```jsx line=2-6
 createStitches({
@@ -191,7 +192,7 @@ createStitches({
 });
 ```
 
-The `media` config supports [range](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax_improvements_in_level_4) queries by default:
+A configuração de `media` suporta consultas de [alcance](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax_improvements_in_level_4) por padrão:
 
 ```jsx line=3
 createStitches({
@@ -203,23 +204,23 @@ createStitches({
 
 ### utils
 
-Set up custom [utils](/docs/utils) to improve your developer experience.
+Define [utilitários](/docs/utils) personalizados para melhorar a tua experiência de programador.
 
 ```jsx line=2-18
 createStitches({
   utils: {
-    // A property for applying width/height together
+    // Uma propriedade para aplicação conjunta de `width` e `height`
     size: (value) => ({
       width: value,
       height: value,
     }),
 
-    // A property to apply linear gradient
+    // Uma propriedade para aplicar gradiente linear
     linearGradient: (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
 
-    // An abbreviated property for background-color
+    // Uma propriedade abreviada para `background-color`
     bg: (value) => ({
       backgroundColor: value,
     }),
@@ -229,7 +230,7 @@ createStitches({
 
 ### prefix
 
-Prefix all class names and CSS variables to avoid global clashes.
+Prefixa todos nomes de classe e variáveis de CSS para evitar colisões globais.
 
 ```jsx line=2
 createStitches({
@@ -239,25 +240,25 @@ createStitches({
 
 ### themeMap
 
-Define custom mapping of CSS properties to theme tokens.
+Define mapeamento personalizado de propriedades de CSS para simbólicos de tema.
 
 ```jsx
 createStitches({
   themeMap: {
-    // Map these properties to the `space` scale
+    // Delineia estas propriedades para a escala `space`
     width: 'space',
     height: 'space',
   },
 });
 ```
 
-Here's a list of the [default mapping](https://github.com/stitchesjs/stitches/blob/canary/packages/core/src/default/defaultThemeMap.js).
+Cá está uma lista do [mapeamento padrão](https://github.com/stitchesjs/stitches/blob/canary/packages/core/src/default/defaultThemeMap.js).
 
-> Note: this overrides the default mapping. Import [defaultThemeMap](/docs/api#defaultthememap) to merge with default.
+> Nota: isto sobrepõe o mapeamento padrão. Importa [defaultThemeMap](/docs/api#defaultthememap) para combinar com o padrão.
 
 ## theme
 
-An object containing default theme data.
+Um objeto contendo dados do tema padrão.
 
 ```jsx
 const { theme } = createStitches({
@@ -270,16 +271,16 @@ const { theme } = createStitches({
 });
 ```
 
-You can use the returned theme object to apply the default theme class, this is specially useful when using multiple themes:
+Tu podes utilizar o objeto de tema retornado para aplicar a classe do tema padrão, isto é especialmente útil quando estiveres utilizando vários temas:
 
 ```jsx
 <div className={theme}>Content here</div>
 ```
 
-You can use the returned theme objects to read the tokens, like so:
+Tu podes utilizar os objetos de tema retornados para ler os simbólicos, como:
 
 ```diff
-// default theme
+// tema padrão
 + theme.colors.foreground.value; // black
 + theme.colors.foreground.token; // foreground
 + theme.colors.foreground.scale; // colors
@@ -289,7 +290,7 @@ You can use the returned theme objects to read the tokens, like so:
 
 ## createTheme
 
-A function to override the default `theme` passed into the `createStitches` function. It receives a theme object.
+Uma função para sobrepor o `theme` padrão passado para a função `createStitches`. Ela recebe um objeto de tema.
 
 ```jsx
 export const darkTheme = createTheme({
@@ -300,22 +301,22 @@ export const darkTheme = createTheme({
 });
 ```
 
-You can define the theme class to used by passing it as the first argument:
+Tu podes definir a classe de tema a ser utilizada passando-a como primeiro argumento:
 
 ```jsx
 export const darkTheme = createTheme(__'dark-theme'__, {...});
 ```
 
-You can use the returned theme object to apply the default theme class:
+Tu podes utilizar o objeto de tema retornado para aplicar a classe de tema padrão:
 
 ```jsx
 <div className={darkTheme}>{children}</div>
 ```
 
-You can use the returned theme objects to read the tokens, like so:
+Tu podes utilizar os objetos de tema retornados para ler os simbólicos, como:
 
 ```diff
-// dark theme
+// tema escuro
 + dark.colors.foreground.value; // white
 + dark.colors.foreground.token; // foreground
 + dark.colors.foreground.scale; // colors
@@ -323,9 +324,9 @@ You can use the returned theme objects to read the tokens, like so:
 + dark.colors.foreground.computedValue; // var(--colors-foreground)
 ```
 
-## Style object
+## Objeto de estilo
 
-CSS but written as a JavaScript object.
+CSS porém escrito como um objeto de JavaScript.
 
 ```jsx
 {
@@ -351,9 +352,9 @@ CSS but written as a JavaScript object.
 }
 ```
 
-## Locally scoped tokens
+## Objetos simbólicos insolados localmente
 
-You can create a token directly within a style object by prefixing it with two dollar signs (`$$`).
+Tu podes criar um simbólico diretamente de dentro de um objeto de estilo ao prefixá-lo com dois sinais de dólar (`$$`).
 
 ```jsx
 const Button = styled('button', {
@@ -362,24 +363,24 @@ const Button = styled('button', {
 });
 ```
 
-## Scale-prefixed tokens
+## Objetos simbólicos de escala prefixada
 
-You can pick a token from any of your available [theme](/docs/tokens) scales by prefixing them with the scale name.
+Tu podes pegar um simbólico a partir de quaisquer das tuas escalas de [tema](/docs/tokens) disponível ao prefixá-los com o nome da escala.
 
 ```jsx
 const Button = styled('button', {
-  // apply a color token to a locally scoped token
+  // aplicar um simbólico de cor para um simbólico isolado localmente
   $$shadowColor: '$colors$purple500',
   boxShadow: '0 0 0 15px $$shadowColor'
 
-  // use a token from the sizes scale
+  // Utilize um simbólico da escala de tamanhos
   marginTop: '$sizes$1'
 })
 ```
 
-## As Prop
+## A propriedade `as`
 
-All components created via the `styled` function support a polymorphic `as` prop. This prop is useful for changing the rendering element of a component. You can also use the `as` prop to render another component.
+Todos os componentes criados através da função `styled` suportam uma propriedade `as` polimórfica. Esta propriedade é útil para mudar o elemento de interpretação de um componente. Tu também podes utilizar a propriedade `as` para interpretar um outro componente.
 
 <Preview>
   <DemoButton
@@ -393,7 +394,7 @@ All components created via the `styled` function support a polymorphic `as` prop
 
 ```jsx
 const Button = styled('button', {
-  // base styles
+  // estilos de base
 });
 
 () => (
@@ -403,4 +404,4 @@ const Button = styled('button', {
 );
 ```
 
-> If you're using TypeScript the attributes will change based on the element type provided.
+> Se estiveres utilizando a TypeScript os atributos mudarão com base no tipo de elemento fornecido.
