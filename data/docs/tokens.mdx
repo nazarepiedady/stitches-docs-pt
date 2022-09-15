@@ -1,11 +1,11 @@
 ---
-title: Theme tokens
-description: Define reusable design tokens.
+title: Objetos simbólicos de tema
+description: Definir objetos simbólicos de desenho reutilizável.
 ---
 
-### Defining tokens
+### Definindo objetos simbólicos
 
-You can define your tokens as part of the `createStitches` [configuration](/docs/installation#create-your-config-file). There are 14 token types available.
+Tu podes definir os teus simbólicos como parte da [configuração](/docs/installation#create-your-config-file) de `createStitches`. Há catorze tipos de objetos simbólicos disponíveis.
 
 ```jsx
 export const { styled, css } = createStitches({
@@ -45,11 +45,11 @@ export const { styled, css } = createStitches({
 });
 ```
 
-> This is based on the [System UI Theme Specification](https://system-ui.com/theme) by Brent Jackson.
+> Isto é baseado na [Especificação de Tema de UI do Sistema](https://system-ui.com/theme) por Brent Jackson.
 
-### Using tokens
+### Utilizando objetos simbólicos
 
-After your tokens are defined, you can use them to style components.
+Depois dos teus simbólicos estiverem definidos, podes utilizá-los para estilizar os componentes.
 
 <Preview>
   <DemoButton color="violet" />
@@ -70,7 +70,7 @@ const Button = styled('button', {
 () => <Button>Button</Button>;
 ```
 
-Tokens also work inside the `css` prop.
+Os simbólicos também funcionam dentro da propriedade `css`.
 
 ```jsx
 const Button = styled('button', {});
@@ -86,7 +86,7 @@ const Button = styled('button', {});
 );
 ```
 
-Tokens even work with shorthand CSS properties.
+Os objetos simbólicos funcionam até com propriedades de CSS abreviada.
 
 ```jsx
 const Button = styled('button', {
@@ -97,10 +97,10 @@ const Button = styled('button', {
 () => <Button>Button</Button>;
 ```
 
-### Token aliases
+### Pseudónimos de objeto simbólico
 
-You can create semantic tokens by referencing tokens on the same scale.
-As always, use the `$` to reference a token.
+Tu podes criar simbólicos semântico ao referenciar os simbólicos na mesma escala.
+Como sempre, utilize o `$` para referir-se a um simbólico.
 
 ```jsx
 createStitches({
@@ -113,9 +113,9 @@ createStitches({
 });
 ```
 
-### Locally scoped tokens
+### Objetos simbólicos isolados localmente
 
-You can create a token directly within a style object by prefixing it with two dollar signs (`$$`).
+Tu podes criar um simbólico diretamente dentro de um objeto de estilo ao prefixá-lo com dois sinais de dólar (`$$`).
 
 ```jsx
 const Button = styled('button', {
@@ -124,42 +124,42 @@ const Button = styled('button', {
 });
 ```
 
-### Scale-prefixed tokens
+### Objetos simbólicos de escala prefixada
 
-You can pick a token from any of your available [theme](/docs/tokens) scales by prefixing them with the scale name.
+Tu podes pegar um simbólico a partir de quaisquer das tuas escalas de [tema](/docs/tokens) disponível ao prefixá-los com o nome da escala.
 
 ```jsx
 const Button = styled('button', {
-  // apply a color token to a locally scoped token
+  // aplicar um simbólico de cor para um simbólico isolado localmente
   $$shadowColor: '$colors$purple500',
   boxShadow: '0 0 0 15px $$shadowColor'
 
-  // use a token from the sizes scale
+  // Utilize um simbólico da escala de tamanhos
   marginTop: '$sizes$1'
 })
 ```
 
-### Naming convention
+### Convenção de nomenclatura
 
-We recommend using camel case, pascal case or snake case for your theme tokens. Other word separators may not work as expected.
+Nós recomendamos a utilização da caixa de camelo (ou *camel case*), caixa de pascal (ou *pascal case*) ou caixa de serpente (ou *snake case*) para os teus objetos simbólicos de tema. Outros separadores de palavra podem não funcionar como o esperado.
 
 ```json
-// recommended
+// recomendado
 tokenName
 token_name
 token-name
 
-// avoid
+// evitar
 token.name
 token$name
 token*name
 ```
 
-You can read more about [this here](https://github.com/stitchesjs/stitches/issues/493#issuecomment-801241038).
+Tu podes ler mais a respeito [disto aqui](https://github.com/stitchesjs/stitches/issues/493#issuecomment-801241038).
 
-### Property Mapping
+### Mapeamento de Propriedade
 
-Token types are automatically mapped to CSS Properties for an improved developer experience.
+Os tipos de objetos simbólicos são mapeados automaticamente para as propriedades de CSS para uma experiência de programação aprimorada.
 
 <table style={{ width: '100%', borderSpacing: 0 }}>
   <thead>
