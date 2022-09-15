@@ -1,11 +1,11 @@
 ---
-title: Custom theming
-description: Set up dark mode or multiple themes in minutes.
+title: Criando tema personalizado
+description: Configure o modo escuro ou vários temas em minutos.
 ---
 
-You can create additional themes that override your default [tokens](/docs/tokens).
+Tu podes criar temas adicionais que sobrepõem os teus [objetos simbólicos](/docs/tokens) padrão.
 
-### Set up your tokens
+### Configure os teus objetos simbólicos
 
 ```jsx
 const { styled, css } = createStitches({
@@ -27,9 +27,9 @@ const { styled, css } = createStitches({
 });
 ```
 
-### Add a new theme
+### Adicionar um tema novo
 
-You can create new themes with the `createTheme` function.
+Tu podes criar temas novos com a função `createTheme`.
 
 ```jsx
 const { createTheme } = createStitches({...});
@@ -51,15 +51,15 @@ const darkTheme = createTheme({
 });
 ```
 
-The `darkTheme` const represents a hashed class, which can be added at any point in your application.
+A constante `darkTheme` representa uma classe baralhada (hash, termo em Inglês), que pode ser adicionada em qualquer ponto na tua aplicação.
 
-You can define the theme class to be used by passing it as the first argument:
+Tu podes definir a classe de tema para ser utilizada passando ela como primeiro argumento:
 
 ```jsx
 export const darkTheme = createTheme(__'dark-theme'__, {...});
 ```
 
-### Apply the theme
+### Aplicar o tema
 
 ```jsx
 <div className={__darkTheme__}>
@@ -67,11 +67,11 @@ export const darkTheme = createTheme(__'dark-theme'__, {...});
 </div>
 ```
 
-### Theme object
+### Objeto de tema
 
-The `theme` is an object containing useful token data.
+O `theme` é um objeto contendo dado objeto simbólico útil.
 
-For example, given the following default `theme` and `dark` themes:
+Por exemplo, dado os seguintes temas padrão `theme` e `dark`:
 
 ```jsx
 const { theme, createTheme } = createStitches({
@@ -89,10 +89,10 @@ const dark = createTheme({
 });
 ```
 
-You can use the returned theme objects to read the tokens, like so:
+Tu podes utilizar os objetos de tema retornados para ler os simbólicos, desta maneira:
 
 ```js
-// default theme
+// tema padrão
 theme.colors.primary; // var(--colors-primary)
 theme.colors.primary.value; // black
 theme.colors.primary.token; // primary
@@ -100,7 +100,7 @@ theme.colors.primary.scale; // colors
 theme.colors.primary.variable; // --colors-primary
 theme.colors.primary.computedValue; // var(--colors-primary)
 
-// dark theme
+// tema escuro
 dark.colors.primary; // var(--colors-primary)
 dark.colors.primary.value; // white
 dark.colors.primary.token; // primary
@@ -109,9 +109,9 @@ dark.colors.primary.variable; // --colors-primary
 dark.colors.primary.computedValue; // var(--colors-primary)
 ```
 
-### Theme specific styles
+### Estilos específicos de tema
 
-You can add styles based on themes by retrieving the dynamically generated [theme](/docs/api#theme-1) class.
+Tu podes adicionar estilos com base nos temas recuperando a classe de [tema](/docs/api#theme-1) gerada dinamicamente.
 
 ```jsx line=7,14-16,20-22
 import { createStitches } from '@stitches/react';
