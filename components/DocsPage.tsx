@@ -92,7 +92,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
                     border: 0,
                   }}
                 >
-                  Stitches homepage
+                  Página Principal da Stitches
                 </span>
                 <StitchesLogo />
               </Box>
@@ -135,7 +135,7 @@ export function DocsPage({ children }: { children: React.ReactNode }) {
               </Box>
             ))}
 
-            <NavHeading>Community</NavHeading>
+            <NavHeading>Comunidade</NavHeading>
             <NavItem href="/blog">
               <Text size="2" css={{ color: 'inherit', lineHeight: '1' }}>
                 Blogue
