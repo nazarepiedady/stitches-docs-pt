@@ -18,7 +18,6 @@ export function FeaturesGrid() {
           Funcionalidades
         </Heading>
         <Paragraph size="2" css={{ ta: 'center', mb: '$8' }}>
-          A fully-featured styling library.
           Um biblioteca de estilização completa
         </Paragraph>
 
@@ -56,7 +55,7 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches suporta interpretação no lado do servidor transnavegadora, até para estilos moldáveis
+              A Stitches suporta interpretação no lado do servidor que cruza navegadores, até para estilos moldáveis
               e variantes.
             </Text>
           </Box>
@@ -71,7 +70,7 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Com uma API completamente tipada, propriedades de consciência simbólica, utilitários 
+              Com uma API completamente tipada, propriedades de consciência simbólica, utilitários
               personalizados, a Stitches oferece uma experiência de programação intuitiva e divertida.
             </Text>
           </Box>
@@ -86,7 +85,7 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches só injeta os estilos que são de fato utilizados, então os teus utilizadores não
+              A Stitches só injeta os estilos que são de fato utilizados, então os teus utilizadores não
               descarregam CSS desnecessário.
             </Text>
           </Box>
@@ -116,7 +115,7 @@ export function FeaturesGrid() {
               size={{ '@initial': '4', '@bp2': '4' }}
               css={{ lineHeight: '27px', color: '$slate11' }}
             >
-              Stitches fornece uma propriedade <Code>css</Code>, que permite que a sobreposição de estilo
+              A Stitches fornece uma propriedade <Code>css</Code>, que permite que a sobreposição de estilo
               seja aplicada na camada de consumo.
             </Text>
           </Box>
