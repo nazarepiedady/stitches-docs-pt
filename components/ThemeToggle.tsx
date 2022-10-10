@@ -10,7 +10,7 @@ export const ThemeToggle = (props) => {
       variant="ghost"
       onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}
       {...props}
-      aria-label="toggle a light and dark color scheme"
+      aria-label="alterne para um esquema de cor claro e escuro"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
