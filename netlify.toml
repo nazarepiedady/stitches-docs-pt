@@ -1,5 +1,5 @@
 [build.environment]
-NPM_FLAGS="--install --force"
+NPM_FLAGS="--version"
 
 [build]
 command = "yarn run build"
