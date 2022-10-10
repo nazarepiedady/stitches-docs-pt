@@ -70,7 +70,7 @@ export function Community() {
                 Twitter
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                Para anúncios, publicações do blogue e dicas gerais de Stitches. 
+                Para anúncios, publicações do blogue e dicas gerais de Stitches.
               </Text>
             </Card>
           </Box>
@@ -105,7 +105,7 @@ export function Community() {
                 Discord
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                Para envolveres-te na comunidade, fazeres perguntas, e partilhar dicas.
+                Para envolveres-te na comunidade, fazeres perguntas, e partilhares dicas.
               </Text>
             </Card>
           </Box>
@@ -141,7 +141,7 @@ export function Community() {
                 GitHub
               </Text>
               <Text as="p" size="3" css={{ lineHeight: '23px', color: '$slate11' }}>
-                Para apresentar problemas, pedires funcionalidades e contribuires, consulte a nossa GitHub.
+                Para apresentar problemas, pedires funcionalidades e contribuíres, consulte a nossa GitHub.
               </Text>
             </Card>
           </Box>
