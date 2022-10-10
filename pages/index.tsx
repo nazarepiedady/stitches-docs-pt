@@ -268,7 +268,7 @@ export default function Home() {
           >
             <Box>
               <Text variant="gray" css={{ lineHeight: '20px', mb: '$3' }}>
-                Bundle size (Core)
+                Tamanho do Pacote (Núcleo)
               </Text>
               <Text size="8" css={{ fontWeight: 500 }}>
                 5.9kb
@@ -318,13 +318,13 @@ export default function Home() {
           >
             <Box>
               <Box css={{ mb: '$5' }}>
-                <Code css={{ mb: '$5', fontFamily: '$mono', fontSize: '$4' }}>Variants</Code>
+                <Code css={{ mb: '$5', fontFamily: '$mono', fontSize: '$4' }}>Variantes</Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
                 Desenhe APIs de componente constituível com variantes
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Variantes são um cidadão de primeira classe de Stitches. Com várias varientes, variantes,
+                Variantes são um cidadão de primeira classe de Stitches. Com várias variantes, variantes,
                 variantes compostas, e variantes predefinidas, podes desenhar APIs de componente
                 constituível que são tipadas automaticamente.
               </Text>
@@ -343,7 +343,7 @@ export default function Home() {
                   variant={variantsCodeActiveHighlight === 'one' ? 'active' : 'ghost'}
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
-                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Variants</Text>
+                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Variantes</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
                     Defina várias variantes de componentes.
                   </Text>
@@ -368,7 +368,7 @@ export default function Home() {
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
                   <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>
-                    Default Variants
+                    Variantes Padrão
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
                     Defina um valor como padrão para cada variante.
@@ -404,10 +404,10 @@ export default function Home() {
                 </Code>
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
-                Modo escuro é fácil com a crianção de tema embutida.
+                Modo escuro é fácil com a criação de tema embutida.
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
-                Stitches tem soluções embutidas para simbólicos e criação de temas, que utilizam variavés
+                Stitches tem soluções embutidas para simbólicos e criação de temas, que utilizam variáveis
                 de CSS nos bastidores. Tu podes definir vários temas, depois expor eles em qualquer parte
                 da tua aplicação.
               </Text>
@@ -437,7 +437,7 @@ export default function Home() {
                   variant={themingCodeActiveHighlight === 'two' ? 'active' : 'ghost'}
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
-                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Token aliases</Text>
+                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Pseudónimos de Simbólicos</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
                     Consulte os simbólicos pré-existentes para definir pseudónimos semânticos.
                   </Text>
@@ -448,7 +448,7 @@ export default function Home() {
                   variant={themingCodeActiveHighlight === 'three' ? 'active' : 'ghost'}
                   css={{ p: '$3', mb: '$2', width: '100%' }}
                 >
-                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Themes</Text>
+                  <Text css={{ fontWeight: 500, lineHeight: '22px', mb: '$1' }}>Temas</Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
                     Sobreponha os simbólicos para definir vários temas.
                   </Text>
@@ -661,7 +661,7 @@ export default function Home() {
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
                 Simbólicos delineiam automaticamente para escala mais apropriada—com uma sintaxe simples—
-                para um experiência suavel de programador. Tu podes personalizar o mapeamento padrão com
+                para uma experiência suave de programação. Tu podes personalizar o mapeamento padrão com
                 o nosso {''} objeto <Code>themeMap</Code>, ou sobrepor o padrão baseado em cada caso.
               </Text>
               <Box
@@ -683,7 +683,7 @@ export default function Home() {
                     Mapeamento de simbólico inteligente
                   </Text>
                   <Text variant="gray" css={{ lineHeight: '22px' }}>
-                    Simbólicos delineam automaticamente para escala mais apropriada.
+                    Simbólicos delineiam automaticamente para escala mais apropriada.
                   </Text>
                 </Card>
                 <Card
@@ -733,7 +733,7 @@ export default function Home() {
               </Text>
               <Text size="4" css={{ lineHeight: '27px', '@bp2': { mb: '$6' } }}>
                 Invente as tuas próprias propriedades de CSS personalizadas com a nossa funcionalidade de
-                utilitários. Acelere a teu fluxo de trabalho abreviando propriedades de CSS, agrupando 
+                utilitários. Acelere a teu fluxo de trabalho abreviando propriedades de CSS, agrupando
                 várias propriedades de CSS juntas, ou simplificando uma sintaxe complicada.
               </Text>
               <Box
