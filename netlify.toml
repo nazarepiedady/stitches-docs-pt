@@ -1,6 +1,6 @@
 [build.environment]
-NPM_FLAGS="--version"
+    NPM_FLAGS="--version"
 
 [build]
-command = "yarn run build"
-publish = "docs/"
+    publish = ".next/"
+    command = "yarn && yarn run build"
