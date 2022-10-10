@@ -23,9 +23,8 @@ export default function BlogPost({ frontmatter, code, relatedPosts }: BlogPost) 
 
   const twitterShare = `
 		https://twitter.com/intent/tweet?
-		text="${frontmatter.title}" by @${
-    authors[frontmatter.by].twitter
-  } on the @stitchesjs blog.&url=https://stitches.dev/blog/${frontmatter.slug}
+		text="${frontmatter.title}" by @${authors[frontmatter.by].twitter
+    } on the @stitchesjs blog.&url=https://stitches.dev/blog/${frontmatter.slug}
 		`;
 
   return (
@@ -52,7 +51,7 @@ export default function BlogPost({ frontmatter, code, relatedPosts }: BlogPost) 
             <Box css={{ mr: '$2' }}>
               <ArrowLeftIcon />
             </Box>
-            Blog
+            Blogue
           </Button>
         </NextLink>
 
@@ -87,7 +86,7 @@ export default function BlogPost({ frontmatter, code, relatedPosts }: BlogPost) 
             {frontmatter.type === 'changelog' && (
               <>
                 <Separator orientation="vertical" css={{ mx: '$2' }} />
-                <Badge>Changelog</Badge>
+                <Badge>Relatório de Mudança</Badge>
               </>
             )}
           </Flex>
@@ -185,11 +184,11 @@ export async function getStaticProps(context) {
 
   const relatedPosts = frontmatter.relatedIds
     ? await Promise.all(
-        frontmatter.relatedIds.map(async (id) => {
-          const { frontmatter } = await getMdxBySlug('blog', id);
-          return frontmatter;
-        })
-      )
+      frontmatter.relatedIds.map(async (id) => {
+        const { frontmatter } = await getMdxBySlug('blog', id);
+        return frontmatter;
+      })
+    )
     : null;
 
   return {
