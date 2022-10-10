@@ -167,11 +167,13 @@ export default function TestScroll() {
               </Box>
               <Text size="8" css={{ fontWeight: 500, lineHeight: '40px', mb: '$4' }}>
                 Design composable component APIs with variants
+                Desenhe APIs de Componentes Constituíveis com as Variantes
               </Text>
               <Paragraph css={{ mb: '$6' }}>
                 Variants are a first-class citizen of Stitches. With multiple variants, compound
                 variants, and default variants, you can design composable component APIs which are
                 typed automatically.
+                As variantes são cidadãos de primeira classe da Stitches. Com as variantes múltiplas, variantes compostas, e variantes padrão, podes desenhar APIs de componente constituíveis que são tipadas automaticamente.
               </Paragraph>
               <Card
                 as="button"
@@ -181,9 +183,11 @@ export default function TestScroll() {
               >
                 <Text css={{ fontWeight: 500, lineHeight: '20px', mb: '$1' }}>
                   Default Variants
+                  Variantes Padrão
                 </Text>
                 <Text variant="gray" css={{ lineHeight: '20px' }}>
                   Apply styles when two or more variants match.
+                  Aplique estilos quando duas ou mais variantes se cruzarem.
                 </Text>
               </Card>
             </Box>
