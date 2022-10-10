@@ -129,7 +129,7 @@ export const components = {
             }}
           >
             <DS.Button onClick={() => setIsCollapsed(false)}>
-              <ChevronDownIcon /> Show code
+              <ChevronDownIcon /> Mostrar o código
             </DS.Button>
           </DS.Box>
         )}
