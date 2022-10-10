@@ -179,7 +179,7 @@ export function Hero() {
               </svg>
             </Flex>
             <Heading as="h4" css={{ mb: '$2' }}>
-              Execelente Desempenho
+              Excelente Desempenho
             </Heading>
             <Text
               as="p"
@@ -192,8 +192,7 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Stitches evita interpolações de propriedade desnecessárias em tempo de execução, dando-lhe
-              mais desempenho do que outras bibliotecas de estilização.
+              A Stitches evita interpolações desnecessárias de propriedade em tempo de execução, dando-lhe mais desempenho do que outras bibliotecas de estilização.
             </Text>
           </Box>
           <Box>
@@ -365,8 +364,7 @@ export function Hero() {
                 lineHeight: '25px',
               }}
             >
-              Stitches possui uma API completamente tipada, para minimizar a curva de aprendizado, e
-              fornece a melhor experiência de programação possível.
+              A Stitches possui uma API completamente tipada, para minimizar a curva de aprendizado, e fornece a melhor experiência de programação possível.
             </Text>
           </Box>
           <Box>
@@ -434,7 +432,7 @@ export function Hero() {
               }}
             >
               Stitches possui uma biblioteca dedicada a React, porém a <Code>@stitches/core</Code>
-              funciona com qualquer abstração incluíndo a Vue, Svelte, e até masmo HTML pura.
+              funciona com qualquer abstração incluindo a Vue, Svelte, e até mesmo HTML pura.
             </Text>
           </Box>
         </Grid>
