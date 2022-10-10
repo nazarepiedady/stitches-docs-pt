@@ -68,13 +68,11 @@ export function WallOfLove() {
               author="Evan Hennessy"
               username="hennessyevan"
             >
-              Of all the libraries I’ve built design systems with: SC, emotion,
-              xstyled, styled-system, theme-ui etc.,{' '}
+              De todas as bibliotecas com as quais construi sistemas de desenho: SC, emotion, xstyled, styled-system, theme-ui etc., a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              has been the most ergonomic and enjoyable. Took a look at the roadmap and it looks
-              like it’s getting even better.
+              foi a mais ergonómica e agradável. Dei uma vista de olhos no mada de estradas e parece que está ficando ainda melhor.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -84,13 +82,11 @@ export function WallOfLove() {
               author="Giuseppe"
               username="giuseppegurgone"
             >
-              I have been maintainer of SUIT CSS, worked on design systems at scale when we still
-              called them Styleguide, created a couple of CSS in JS libs and watched this space for
-              a long while and{' '}
+              Eu fui responsável pelo SUIT CSS, trabalhei sobre sistemas de desenho na scale quando ainda as chamávamos de guia de estilo (Styleguide), criei algumas bibliotecas de CSS em JS e assisti este espaço por um longo período e{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              seems the most promising library out there.
+              parece ser a biblioteca mais promissora no mercado.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -100,12 +96,11 @@ export function WallOfLove() {
               author="Anna Carolina"
               username="accezr"
             >
-              I've been using Stitches + Radix to build a base component library for our Design
-              System and I have to say that I'm loving the development experience. Thanks to{' '}
+              Eu utilizei a Stitches com a Radix para construir uma biblioteca de componente base para o nosso Sistema de Desenho e tenho que dizer que estou amando a experiência de programação. Obrigado à{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @modulz
               </Text>{' '}
-              for making my life easier. The latest updates are 🔥🔥
+              por tornar a minha vida muito mais fácil. As atualizações recentes estão 🔥🔥
             </Tweet>
           </CarouselSlide>
           {/* <CarouselSlide>
@@ -126,13 +121,11 @@ export function WallOfLove() {
               author="Dylan Klohr"
               username="dylanklohr"
             >
-              The{' '}
+              O equipa da{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @modulz
               </Text>{' '}
-              crew IS without a DOUBT the most devoted crew I've seen. NEVER have I seen a team
-              respond to a bug report, in a CANARY build, via a discord channel and had the issue
-              resolved by a maintainer in &lt; 10 minutes. 🤯{' '}
+              é sem dúvida a equipa mais devota que vi. Nunca vi eu uma equipa responder a um relatório de bug, em uma construção CANÁRIA, através de um canal de Discord e ter uma questão resolvida por um responsável em &lt; 10 minutos. 🤯{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @jon_neal
               </Text>
@@ -146,16 +139,15 @@ export function WallOfLove() {
               author="Mark Dalgleish"
               username="markdalgleish"
             >
-              Listening to{' '}
+              Ouvindo o{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @peduarte
               </Text>{' '}
-              talk about{' '}
+              falando sobre{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>
-              , the penny finally dropped for me. They've designed an API that feels like it belongs
-              in the options panel of a design tool because, of course, they're also building{' '}
+              , o tostão finalmente caiu para mim. Eles desenharam uma API que parece pertencer ao painel de opções de uma ferramenta de desenho porque, claro, também estão construindo a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @modulz
               </Text>
@@ -181,13 +173,11 @@ export function WallOfLove() {
               author="Rauno Freiberg"
               username="raunofreiberg"
             >
-              Been using{' '}
+              Utilizei a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              for a week on an actual product and I've never had such a smooth collaboration, shared
-              vocabulary, and mutual understanding with our designer. Setting up tokens and being
-              very systematic and constrained about the UI we build has never been easier.
+              por uma semana sobre um produto real e eu nunca tive uma colaboração agradável, vocabulário partilhado, e entendimento mutuo com o nosso desenhista. Definir simbólicos e ser muito sistemático e restrito acerca da Interface de Utilizador que construimos nunca foi tão fácil.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -197,10 +187,10 @@ export function WallOfLove() {
               author="Mike San Román"
               username="msanromanv"
             >
-              This definitely feels like a step forward, not only because of the performance
-              benefits, SSR support, etc., but the developer experience is amazing.
+              Isto definitivamente parece um passo adiante, não só por causa benefício em relação ao desempenho, suporte para SSR, etc, porém a experiência de programação é fantástica.
               <br />
-              <br />I think I haven't been as excited about a styling lib ever.
+              <br />
+              EU acho que não tenho estado tão entusiasmado a respeito de uma biblioteca de estilização.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -210,13 +200,11 @@ export function WallOfLove() {
               author="Răzvan Pavel"
               username="razvan_pavel"
             >
-              Something I don't see very often in any tech or product reading: developer &amp; debug
-              experience! It's this focus on using tech as a tool and putting humans first that
-              makes products successful.{' '}
+              Algo que não vejo com frequência em nenhuma leitura sobre produto e tecnologia: experiência de programação &amp; depuração! É este foco sobre a utilização de tecnologia como uma ferramenta e colocando humanos em primeiro é que torna um produto bem-sucedido.{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              will probably be around for a while.
+              provavelmente estará por aqui por uns tempos.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -226,10 +214,7 @@ export function WallOfLove() {
               author="🆅🅸🅽🅲🅴"
               username="1stfloor"
             >
-              The cool thing for me as a designer was seeing the systematic approach to using design
-              tokens at a level I could understand 😂 I believe the gap between design and
-              development is finally narrowing and solutions like Stitches and Modulz speed up this
-              process.
+              A coisa fantástica para mim como um desenhista foi em ver a abordagem sistemática para utilização de simbólicos de desenho em um nível que poderia entender 😂 eu acredito que a lacuna entre o desenho e desenvolvimento está finalmente se estreitando e soluções como a Stitches e a Modulz aceleraram este processo.
             </Tweet>
           </CarouselSlide>
           {/* <CarouselSlide>
@@ -254,8 +239,7 @@ export function WallOfLove() {
               author="Joe Bell 🔔"
               username="joebell_"
             >
-              Stitches pretty much ticks everything off on my CSS-in-JS wish list. I couldn't go
-              back to writing CSS without it.
+              A Stitches praticamente colocou um visto em tudo sobre a minha lista de CSS-em-JS. Eu não poderia voltar a escrever CSS sem ela.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -265,12 +249,10 @@ export function WallOfLove() {
               author="Gianmarco Simone ✨"
               username="ggsimm"
             >
-              I'm a{' '}
+              Agora sou um convertido a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
-              </Text>{' '}
-              convert now. This is just a superior way of writing css-in-js, and I'm excited to see
-              where it goes.
+              </Text>. Isto é só uma maneira superior de escrever-se CSS-em-JS, e estou entusiasmado para ver onde ela irá.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -280,9 +262,7 @@ export function WallOfLove() {
               author="Chris"
               username="chrishbrown55"
             >
-              This might be the best implementation of CSS-in-JS yet. It does what CSS-in-JS has
-              always failed to do in the past: fix all the problems that CSS had already solved (and
-              Sass).
+              Isto ainda pode ser a melhor implementação de CSS-em-JS. Ela faz o que a CSS-em-JS sempre tem falhado em fazer no passado: corrigir todos os problemas que a CSS e a Sass já resolveram.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -292,14 +272,14 @@ export function WallOfLove() {
               author="Kyle Holmberg"
               username="kylemh_"
             >
-              I haven’t been excited by tech tooling since Next.js 2 years ago.
+              Eu não tenho estado entusiasmado por ferramental tecnológico desde a Next.js a 2 anos atrás.
               <br />
               <br />
-              I’m feeling that way about{' '}
+              Estou sentindo-me daquela maneira a respeito da{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              now.
+              Agora.
             </Tweet>
           </CarouselSlide>
           {/* <CarouselSlide>
@@ -325,16 +305,15 @@ export function WallOfLove() {
               author="Kevin Wolf"
               username="elkevinwolf"
             >
-              I am really impressed with Stitches by{' '}
+              Eu estou realmente impressionado com Stitches por {' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @modulz
               </Text>{' '}
-              . Creating a design system with strong TypeScript support and ease of extension has
-              never been easier. Great job{' '}
+              . A criação de sistema de desenho com suporte de TypeScript forte e a facilidade de extensão nunca tinham sido tão fáceis. Bom trabalho {' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @peduarte
               </Text>{' '}
-              and team! 🚀
+              e equipa! 🚀
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -344,16 +323,14 @@ export function WallOfLove() {
               author="Jimmy Cleveland"
               username="JimmyDCleveland"
             >
-              I haven't been much of a fan of js object syntax for css in the past, but I've been
-              trying out{' '}
+              Eu nunca fui tão fã da sintaxe de objeto de JavaScript para CSS no passado, mas tenho estado a estar a testar a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              on a side project and it's quite fun so far.
+              sobre um projeto pessoal e até aqui tem sido muito divertido.
               <br />
               <br />
-              The performance promises and type-hinting make it really appealing right away. Good
-              docs as well.
+              O desempenho promete e a sugestão de tipo torna-a realmente atraente. A documentação também é boa.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -366,8 +343,7 @@ export function WallOfLove() {
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
-              is the best. Now I'm pretty sure every CSS in JS libs should have a (static) variants
-              API as a 1st-class citizen.
+              é a melhor. Agora estou bastante certo de que todas bibliotecas de CSS em JS deveriam ter uma API de variantes (estática) como um cidadão de primeira classe.
             </Tweet>
           </CarouselSlide>
           {/* <CarouselSlide>
@@ -391,7 +367,7 @@ export function WallOfLove() {
               author="Cristiano Rastelli"
               username="areaweb"
             >
-              I must say, really impressed by how neat and well-thought is the API of{' '}
+              Eu devo dizer, que estou de fato impressionado de quão engenhosa e bem pensada é a API da {' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>{' '}
@@ -405,8 +381,7 @@ export function WallOfLove() {
               author="Juan Di Toro"
               username="ditorojuanf"
             >
-              This is 🔥 from the docs you can already see how helpful this is for designing
-              component libraries with great system design definitions.
+              Isto é 🔥 da documentação que já pudeste ver de quão útil isto é para desenhar bibliotecas de componente com grandes definições de desenho de sistema.
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
@@ -416,12 +391,11 @@ export function WallOfLove() {
               author="றதீஸ் / raðiːs / rathes"
               username="rswebdesigner"
             >
-              One of the reasons why I really love{' '}
+              Uma das razões de eu fato amar a{' '}
               <Text variant="blue" css={{ display: 'inline' }}>
                 @stitchesjs
               </Text>
-              : This whole skeleton component took me like 5 minutes? Including all variants. In
-              other CSS-in-JS solutions, this would take ages 😅
+              : Este componente de esboço inteiro custou-me como apenas 5 minutos? Incluindo todas as variantes. Em outras soluções de CSS-em-JS, isto levaria séculos 😅
             </Tweet>
           </CarouselSlide>
           <CarouselSlide>
