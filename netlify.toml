@@ -3,4 +3,4 @@
 
 [build]
     publish = ".next/"
-    command = "yarn && yarn run build"
+    command = "yarn && yarn build"
